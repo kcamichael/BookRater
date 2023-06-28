@@ -1,0 +1,11 @@
+{
+  "Version": 1,
+  "Hash": "pmLtdw1QaJqgUD/my9mgx66n8a2PGRdsk1cyZWtb9QU=",
+  "Source": "BookRater.API",
+  "BasePath": "_content/BookRater.API",
+  "Mode": "Default",
+  "ManifestType": "Build",
+  "ReferencedProjectsConfiguration": [],
+  "DiscoveryPatterns": [],
+  "Assets": []
+}

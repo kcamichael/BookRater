@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\ElevenFiftyBlueBadge165\\BookRater\\BookRater.Data\\BookRater.Data.csproj": {}
+    "c:\\ElevenFiftyBlueBadge165\\BookRater\\BookRater.Data\\BookRater.Data.csproj": {}
   },
   "projects": {
-    "C:\\ElevenFiftyBlueBadge165\\BookRater\\BookRater.Data\\BookRater.Data.csproj": {
+    "c:\\ElevenFiftyBlueBadge165\\BookRater\\BookRater.Data\\BookRater.Data.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\ElevenFiftyBlueBadge165\\BookRater\\BookRater.Data\\BookRater.Data.csproj",
+        "projectUniqueName": "c:\\ElevenFiftyBlueBadge165\\BookRater\\BookRater.Data\\BookRater.Data.csproj",
         "projectName": "BookRater.Data",
-        "projectPath": "C:\\ElevenFiftyBlueBadge165\\BookRater\\BookRater.Data\\BookRater.Data.csproj",
+        "projectPath": "c:\\ElevenFiftyBlueBadge165\\BookRater\\BookRater.Data\\BookRater.Data.csproj",
         "packagesPath": "C:\\Users\\kcami\\.nuget\\packages\\",
-        "outputPath": "C:\\ElevenFiftyBlueBadge165\\BookRater\\BookRater.Data\\obj\\",
+        "outputPath": "c:\\ElevenFiftyBlueBadge165\\BookRater\\BookRater.Data\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\kcami\\AppData\\Roaming\\NuGet\\NuGet.Config"
@@ -39,6 +39,10 @@
           "targetAlias": "net7.0",
           "dependencies": {
             "Microsoft.AspNetCore.Identity.EntityFrameworkCore": {
+              "target": "Package",
+              "version": "[7.0.8, )"
+            },
+            "Microsoft.EntityFrameworkCore.SqlServer": {
               "target": "Package",
               "version": "[7.0.8, )"
             }

@@ -8,6 +8,7 @@ namespace BookRater.Data.Entities
 {
     public class AuthorEntity
     {
+        [Required]
         public int Id { get; set; }
 
         [MaxLength(50, ErrorMessage = "Text cannot exceed 50 characters.")]

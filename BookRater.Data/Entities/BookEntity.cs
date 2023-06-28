@@ -8,6 +8,7 @@ namespace BookRater.Data.Entities
 {
     public class BookEntity
     {
+        [Required]
         public int Id { get; set; }
         [MaxLength(100, ErrorMessage = "Title cannot exceed 300 characters.")]
         public string Title { get; set; } = string.Empty;

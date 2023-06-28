@@ -1,0 +1,17 @@
+C:\ElevenFiftyBlueBadge165\BookRater\BookRater.Services\bin\Debug\net7.0\BookRater.Services.deps.json
+C:\ElevenFiftyBlueBadge165\BookRater\BookRater.Services\bin\Debug\net7.0\BookRater.Services.dll
+C:\ElevenFiftyBlueBadge165\BookRater\BookRater.Services\bin\Debug\net7.0\BookRater.Services.pdb
+C:\ElevenFiftyBlueBadge165\BookRater\BookRater.Services\bin\Debug\net7.0\BookRater.Data.dll
+C:\ElevenFiftyBlueBadge165\BookRater\BookRater.Services\bin\Debug\net7.0\BookRater.Models.dll
+C:\ElevenFiftyBlueBadge165\BookRater\BookRater.Services\bin\Debug\net7.0\BookRater.Models.pdb
+C:\ElevenFiftyBlueBadge165\BookRater\BookRater.Services\bin\Debug\net7.0\BookRater.Data.pdb
+C:\ElevenFiftyBlueBadge165\BookRater\BookRater.Services\obj\Debug\net7.0\BookRater.Services.csproj.AssemblyReference.cache
+C:\ElevenFiftyBlueBadge165\BookRater\BookRater.Services\obj\Debug\net7.0\BookRater.Services.GeneratedMSBuildEditorConfig.editorconfig
+C:\ElevenFiftyBlueBadge165\BookRater\BookRater.Services\obj\Debug\net7.0\BookRater.Services.AssemblyInfoInputs.cache
+C:\ElevenFiftyBlueBadge165\BookRater\BookRater.Services\obj\Debug\net7.0\BookRater.Services.AssemblyInfo.cs
+C:\ElevenFiftyBlueBadge165\BookRater\BookRater.Services\obj\Debug\net7.0\BookRater.Services.csproj.CoreCompileInputs.cache
+C:\ElevenFiftyBlueBadge165\BookRater\BookRater.Services\obj\Debug\net7.0\BookRater.Services.csproj.CopyComplete
+C:\ElevenFiftyBlueBadge165\BookRater\BookRater.Services\obj\Debug\net7.0\BookRater.Services.dll
+C:\ElevenFiftyBlueBadge165\BookRater\BookRater.Services\obj\Debug\net7.0\refint\BookRater.Services.dll
+C:\ElevenFiftyBlueBadge165\BookRater\BookRater.Services\obj\Debug\net7.0\BookRater.Services.pdb
+C:\ElevenFiftyBlueBadge165\BookRater\BookRater.Services\obj\Debug\net7.0\ref\BookRater.Services.dll
