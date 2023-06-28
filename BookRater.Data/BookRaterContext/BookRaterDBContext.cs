@@ -17,28 +17,64 @@ namespace BookRater.Data.BookRaterContext
         public DbSet<GenreEntity> Genre { get; set; }
         public DbSet<ReviewEntity> Review { get; set; }
 
-        //*Seed Data - Will Change, This is just a base
-        // protected override void OnModelCreating(ModelBuilder builder)
-        // {
-        //     base.OnModelCreating(builder);
+        protected override void OnModelCreating(ModelBuilder builder)
+        {
+            base.OnModelCreating(builder);
 
-        //     builder.Entity<AuthorEntity>().HasData(
-        //         new AuthorEntity
-        //         {
-        //             Id = 1,
-        //             Name = "Happy Readers"
-        //         },
-        //         new AuthorEntity
-        //         {
-        //             Id = 2,
-        //             Name = "Sad Readers"
-        //         },
-        //         new AuthorEntity
-        //         {
-        //             Id = 3,
-        //             Name = "Bored Readers"
-        //         }
-        //     )
-        // }
+            builder.Entity<GenreEntity>().HasData(
+                new GenreEntity
+                {
+                    Id = 1,
+                    GenreName = "Biography"
+                },
+                new GenreEntity
+                {
+                    Id = 2,
+                    GenreName = "Romance"
+                },
+                new GenreEntity
+                {
+                    Id = 3,
+                    GenreName = "Science Fiction"
+                },
+                new GenreEntity
+                {
+                    Id = 4,
+                    GenreName = "Fantasy"
+                },
+                new GenreEntity
+                {
+                    Id = 5,
+                    GenreName = "Thriller"
+                }
+            );
+
+            builder.Entity<AuthorEntity>().HasData(
+                new AuthorEntity
+                {
+                    Id = 1,
+                    FirstName = "Jeff",
+                    LastName = "Pearlman"
+                },
+                new AuthorEntity
+                {
+                    Id = 2,
+                    FirstName = "James",
+                    LastName = "Patterson"
+                },
+                new AuthorEntity
+                {
+                    Id = 3,
+                    FirstName = "Stephen",
+                    LastName = "King"
+                }
+                new AuthorEntity
+                {
+                    Id = 4,
+                    FirstName = "Jane",
+                    LastName = "Austen"
+                }
+            );
+        }
     }
 }

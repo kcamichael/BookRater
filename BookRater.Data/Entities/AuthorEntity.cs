@@ -16,5 +16,7 @@ namespace BookRater.Data.Entities
 
         [MaxLength(50, ErrorMessage = "Text cannot exceed 50 characters.")]
         public string LastName { get; set; }
+        
+        public string FullName { get { return $"{FirstName} {LastName}"; } }
     }
 }
