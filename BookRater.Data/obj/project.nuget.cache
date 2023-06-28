@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "+jL6OSaWp7E6LaC9aGehHpKWPLC9uvYBZXrfN0J5/LzT7PLDdTpzDrL951UHX+ewE9LldTMeRXYu7ZUVVJPKEQ==",
+  "dgSpecHash": "J3MQA05NXYlq/opYm1QPgc0b8fYBnqAlbguODteXAgHgScdjhTari+Vh7iL0wJ7uqzFweimfnks0v7Adguz4eA==",
   "success": true,
-  "projectFilePath": "c:\\ElevenFiftyBlueBadge165\\BookRater\\BookRater.Data\\BookRater.Data.csproj",
+  "projectFilePath": "C:\\ElevenFiftyBlueBadge165\\BookRater\\BookRater.Data\\BookRater.Data.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\kcami\\.nuget\\packages\\azure.core\\1.24.0\\azure.core.1.24.0.nupkg.sha512",
     "C:\\Users\\kcami\\.nuget\\packages\\azure.identity\\1.6.0\\azure.identity.1.6.0.nupkg.sha512",

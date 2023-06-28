@@ -67,7 +67,7 @@ namespace BookRater.Data.BookRaterContext
                     Id = 3,
                     FirstName = "Stephen",
                     LastName = "King"
-                }
+                },
                 new AuthorEntity
                 {
                     Id = 4,
