@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "3OjqsqIz94NIkO0yIdtQ32CfPHzyvVkiKszeik6+Qbf9xnqWvat7x67mA6EIXYxU7rOnmsZuS41woyZ9HXiA8g==",
+  "dgSpecHash": "xhDvOzEk1GxVu8cR0pXACIHGBpt1x4ccfLSHJnJslW6rpeDlXne8yS7RjA0Yf38GUI1ltUK9KlMbOHJ1rttIBQ==",
   "success": true,
   "projectFilePath": "C:\\ElevenFiftyBlueBadge165\\BookRater\\BookRater.Services\\BookRater.Services.csproj",
   "expectedPackageFiles": [
@@ -73,5 +73,12 @@
     "C:\\Users\\kcami\\.nuget\\packages\\system.threading.tasks.extensions\\4.5.4\\system.threading.tasks.extensions.4.5.4.nupkg.sha512",
     "C:\\Users\\kcami\\.nuget\\packages\\system.windows.extensions\\5.0.0\\system.windows.extensions.5.0.0.nupkg.sha512"
   ],
-  "logs": []
+  "logs": [
+    {
+      "code": "Undefined",
+      "level": "Warning",
+      "warningLevel": 1,
+      "message": "Problem reading the cache file C:\\ElevenFiftyBlueBadge165\\BookRater\\BookRater.Services\\obj\\project.nuget.cache : Invalid property identifier character: <. Path 'version', line 3, position 0."
+    }
+  ]
 }
