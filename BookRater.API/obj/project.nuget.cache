@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "lOrc2QuKvg/+mB1xpI7ckbUs9xCP4+y6wL0ZGSRBe150fegSeXW8cdRM9td7m8Z2q1M16Gw0u0gZDRqPZRh6oQ==",
+  "dgSpecHash": "VJ3xs/wGlLshKQ3Wf0TfLxEcg0ktXKbChGZqkD1cfeWvtF3U8OV9tVkZX7cTA+zmdn+7J6yMXhws14MVSRb0Aw==",
   "success": true,
   "projectFilePath": "C:\\ElevenFiftyBlueBadge165\\BookRater\\BookRater.API\\BookRater.API.csproj",
   "expectedPackageFiles": [
@@ -13,7 +13,7 @@
     "C:\\Users\\seand\\.nuget\\packages\\microsoft.aspnetcore.cryptography.keyderivation\\7.0.8\\microsoft.aspnetcore.cryptography.keyderivation.7.0.8.nupkg.sha512",
     "C:\\Users\\seand\\.nuget\\packages\\microsoft.aspnetcore.identity.entityframeworkcore\\7.0.8\\microsoft.aspnetcore.identity.entityframeworkcore.7.0.8.nupkg.sha512",
     "C:\\Users\\seand\\.nuget\\packages\\microsoft.aspnetcore.openapi\\7.0.7\\microsoft.aspnetcore.openapi.7.0.7.nupkg.sha512",
-    "C:\\Users\\seand\\.nuget\\packages\\microsoft.bcl.asyncinterfaces\\1.1.1\\microsoft.bcl.asyncinterfaces.1.1.1.nupkg.sha512",
+    "C:\\Users\\seand\\.nuget\\packages\\microsoft.bcl.asyncinterfaces\\7.0.0\\microsoft.bcl.asyncinterfaces.7.0.0.nupkg.sha512",
     "C:\\Users\\seand\\.nuget\\packages\\microsoft.csharp\\4.7.0\\microsoft.csharp.4.7.0.nupkg.sha512",
     "C:\\Users\\seand\\.nuget\\packages\\microsoft.data.sqlclient\\5.0.2\\microsoft.data.sqlclient.5.0.2.nupkg.sha512",
     "C:\\Users\\seand\\.nuget\\packages\\microsoft.data.sqlclient.sni.runtime\\5.0.1\\microsoft.data.sqlclient.sni.runtime.5.0.1.nupkg.sha512",
@@ -85,5 +85,12 @@
     "C:\\Users\\seand\\.nuget\\packages\\system.threading.tasks.extensions\\4.5.4\\system.threading.tasks.extensions.4.5.4.nupkg.sha512",
     "C:\\Users\\seand\\.nuget\\packages\\system.windows.extensions\\5.0.0\\system.windows.extensions.5.0.0.nupkg.sha512"
   ],
-  "logs": []
+  "logs": [
+    {
+      "code": "Undefined",
+      "level": "Warning",
+      "warningLevel": 1,
+      "message": "Problem reading the cache file C:\\ElevenFiftyBlueBadge165\\BookRater\\BookRater.API\\obj\\project.nuget.cache : Invalid property identifier character: <. Path 'version', line 3, position 0."
+    }
+  ]
 }
