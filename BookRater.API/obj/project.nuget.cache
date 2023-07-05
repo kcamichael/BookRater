@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "5AkJ0bjf0MpWMpuWrRI4LzGrXozuF1ZNYCfM3y3IiPnvBA2t2INuaSL3tb3k3YCM0ETDZ27qR2U1zVJO5B2pEg==",
+  "dgSpecHash": "f5zRnbzovDuzwD2ICVpcofp3ddjwF5LXN4H4KGYbApTRD6fTkYYh0x/rP1lu2O/ExtEGfXyNKqS/RkWvbfoDfA==",
   "success": true,
   "projectFilePath": "C:\\ElevenFiftyBlueBadge\\BookRater\\BookRater\\BookRater.API\\BookRater.API.csproj",
   "expectedPackageFiles": [
@@ -13,7 +13,7 @@
     "C:\\Users\\ouiza\\.nuget\\packages\\microsoft.aspnetcore.cryptography.keyderivation\\7.0.8\\microsoft.aspnetcore.cryptography.keyderivation.7.0.8.nupkg.sha512",
     "C:\\Users\\ouiza\\.nuget\\packages\\microsoft.aspnetcore.identity.entityframeworkcore\\7.0.8\\microsoft.aspnetcore.identity.entityframeworkcore.7.0.8.nupkg.sha512",
     "C:\\Users\\ouiza\\.nuget\\packages\\microsoft.aspnetcore.openapi\\7.0.7\\microsoft.aspnetcore.openapi.7.0.7.nupkg.sha512",
-    "C:\\Users\\ouiza\\.nuget\\packages\\microsoft.bcl.asyncinterfaces\\1.1.1\\microsoft.bcl.asyncinterfaces.1.1.1.nupkg.sha512",
+    "C:\\Users\\ouiza\\.nuget\\packages\\microsoft.bcl.asyncinterfaces\\7.0.0\\microsoft.bcl.asyncinterfaces.7.0.0.nupkg.sha512",
     "C:\\Users\\ouiza\\.nuget\\packages\\microsoft.csharp\\4.7.0\\microsoft.csharp.4.7.0.nupkg.sha512",
     "C:\\Users\\ouiza\\.nuget\\packages\\microsoft.data.sqlclient\\5.0.2\\microsoft.data.sqlclient.5.0.2.nupkg.sha512",
     "C:\\Users\\ouiza\\.nuget\\packages\\microsoft.data.sqlclient.sni.runtime\\5.0.1\\microsoft.data.sqlclient.sni.runtime.5.0.1.nupkg.sha512",

@@ -17,6 +17,6 @@ namespace BookRater.Models.ReviewModels
         public string Comment { get; set; }
         [Required]
         public int Rating { get; set; }
-        public List<ReviewEntity>Reviews { get; set; }
+        
     }
 }
