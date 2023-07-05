@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "/pCMpKFyJ2x3ll8ekM9+kTa9edLvAjXrmlmU336igmZtVvb1Hpq9ais5vzTZTYp42N53kc609uPKmvQAQ4Eg4g==",
+  "dgSpecHash": "GfjhDaJSsllcroVSWZegng6ISLR165/4Z9hQ2ij84JEGnw5Jw6/uCAWdu8CdstF3vYjkEgHpxT4He2eAFCX4nw==",
   "success": true,
-  "projectFilePath": "C:\\ElevenFiftyBlueBadge165\\BookRater\\BookRater.Services\\BookRater.Services.csproj",
+  "projectFilePath": "c:\\ElevenFiftyBlueBadge165\\BookRater\\BookRater.Services\\BookRater.Services.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\clarf\\.nuget\\packages\\automapper\\12.0.1\\automapper.12.0.1.nupkg.sha512",
     "C:\\Users\\clarf\\.nuget\\packages\\automapper.extensions.microsoft.dependencyinjection\\12.0.1\\automapper.extensions.microsoft.dependencyinjection.12.0.1.nupkg.sha512",
@@ -73,5 +73,12 @@
     "C:\\Users\\clarf\\.nuget\\packages\\system.threading.tasks.extensions\\4.5.4\\system.threading.tasks.extensions.4.5.4.nupkg.sha512",
     "C:\\Users\\clarf\\.nuget\\packages\\system.windows.extensions\\5.0.0\\system.windows.extensions.5.0.0.nupkg.sha512"
   ],
-  "logs": []
+  "logs": [
+    {
+      "code": "Undefined",
+      "level": "Warning",
+      "warningLevel": 1,
+      "message": "Problem reading the cache file c:\\ElevenFiftyBlueBadge165\\BookRater\\BookRater.Services\\obj\\project.nuget.cache : Invalid property identifier character: <. Path 'version', line 3, position 0."
+    }
+  ]
 }
