@@ -4,6 +4,7 @@ using System.Linq;
 using System.Threading.Tasks;
 using AutoMapper;
 using BookRater.Data.BookRaterContext;
+using BookRater.Data.Entities;
 using BookRater.Models.BookModels;
 
 namespace BookRater.Services.BookServices
@@ -19,9 +20,16 @@ namespace BookRater.Services.BookServices
             _mapper = mapper;
         }
 
-        public Task<bool> AddBook(BookCreate model)
+        public async Task<bool> AddBook(BookCreate model)
         {
-            throw new NotImplementedException();
+            var entity = _mapper.Map<BookEntity>(model);
+
+            if (entity is not null)
+            {
+                await _context.Book.AddAsync(entity);
+                return await _context.SaveChangesAsync() > 0;
+            }
+            return false;
         }
 
         public Task<bool> DeleteBook(int id)
