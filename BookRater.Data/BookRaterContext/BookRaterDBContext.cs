@@ -15,7 +15,8 @@ namespace BookRater.Data.BookRaterContext
         public DbSet<AuthorEntity> Author { get; set; }
         public DbSet<BookEntity> Book { get; set; }
         public DbSet<GenreEntity> Genre { get; set; }
-        public DbSet<ReviewEntity> Review { get; set; }
+        public DbSet<ReviewEntity> Reviews { get; set; }
+      
 
         protected override void OnModelCreating(ModelBuilder builder)
         {

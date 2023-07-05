@@ -153,10 +153,12 @@
           "Microsoft.AspNetCore.App"
         ]
       },
-      "Microsoft.Bcl.AsyncInterfaces/1.1.1": {
+      "Microsoft.Bcl.AsyncInterfaces/7.0.0": {
         "type": "package",
         "compile": {
-          "ref/netstandard2.1/Microsoft.Bcl.AsyncInterfaces.dll": {}
+          "lib/netstandard2.1/Microsoft.Bcl.AsyncInterfaces.dll": {
+            "related": ".xml"
+          }
         },
         "runtime": {
           "lib/netstandard2.1/Microsoft.Bcl.AsyncInterfaces.dll": {
@@ -1537,29 +1539,27 @@
         "microsoft.aspnetcore.openapi.nuspec"
       ]
     },
-    "Microsoft.Bcl.AsyncInterfaces/1.1.1": {
-      "sha512": "yuvf07qFWFqtK3P/MRkEKLhn5r2UbSpVueRziSqj0yJQIKFwG1pq9mOayK3zE5qZCTs0CbrwL9M6R8VwqyGy2w==",
+    "Microsoft.Bcl.AsyncInterfaces/7.0.0": {
+      "sha512": "3aeMZ1N0lJoSyzqiP03hqemtb1BijhsJADdobn/4nsMJ8V1H+CrpuduUe4hlRdx+ikBQju1VGjMD1GJ3Sk05Eg==",
       "type": "package",
-      "path": "microsoft.bcl.asyncinterfaces/1.1.1",
+      "path": "microsoft.bcl.asyncinterfaces/7.0.0",
       "files": [
         ".nupkg.metadata",
         ".signature.p7s",
         "Icon.png",
         "LICENSE.TXT",
         "THIRD-PARTY-NOTICES.TXT",
-        "lib/net461/Microsoft.Bcl.AsyncInterfaces.dll",
-        "lib/net461/Microsoft.Bcl.AsyncInterfaces.xml",
+        "buildTransitive/net461/Microsoft.Bcl.AsyncInterfaces.targets",
+        "buildTransitive/net462/_._",
+        "lib/net462/Microsoft.Bcl.AsyncInterfaces.dll",
+        "lib/net462/Microsoft.Bcl.AsyncInterfaces.xml",
         "lib/netstandard2.0/Microsoft.Bcl.AsyncInterfaces.dll",
         "lib/netstandard2.0/Microsoft.Bcl.AsyncInterfaces.xml",
         "lib/netstandard2.1/Microsoft.Bcl.AsyncInterfaces.dll",
         "lib/netstandard2.1/Microsoft.Bcl.AsyncInterfaces.xml",
-        "microsoft.bcl.asyncinterfaces.1.1.1.nupkg.sha512",
+        "microsoft.bcl.asyncinterfaces.7.0.0.nupkg.sha512",
         "microsoft.bcl.asyncinterfaces.nuspec",
-        "ref/net461/Microsoft.Bcl.AsyncInterfaces.dll",
-        "ref/netstandard2.0/Microsoft.Bcl.AsyncInterfaces.dll",
-        "ref/netstandard2.1/Microsoft.Bcl.AsyncInterfaces.dll",
-        "useSharedDesignerContext.txt",
-        "version.txt"
+        "useSharedDesignerContext.txt"
       ]
     },
     "Microsoft.CSharp/4.7.0": {
@@ -4170,6 +4170,7 @@
       "BookRater.Models >= 1.0.0",
       "BookRater.Services >= 1.0.0",
       "Microsoft.AspNetCore.OpenApi >= 7.0.7",
+      "Microsoft.Bcl.AsyncInterfaces >= 7.0.0",
       "Microsoft.EntityFrameworkCore.Design >= 7.0.8",
       "Microsoft.EntityFrameworkCore.SqlServer >= 7.0.8",
       "Swashbuckle.AspNetCore >= 6.5.0"
@@ -4232,6 +4233,10 @@
           "Microsoft.AspNetCore.OpenApi": {
             "target": "Package",
             "version": "[7.0.7, )"
+          },
+          "Microsoft.Bcl.AsyncInterfaces": {
+            "target": "Package",
+            "version": "[7.0.0, )"
           },
           "Microsoft.EntityFrameworkCore.Design": {
             "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
