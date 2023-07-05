@@ -2,12 +2,23 @@ using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
+using AutoMapper;
+using BookRater.Data.BookRaterContext;
 using BookRater.Models.BookModels;
 
 namespace BookRater.Services.BookServices
 {
     public class BookService : IBookService
     {
+        private readonly BookRaterDBContext _context;
+        private readonly IMapper _mapper;
+
+        public BookService(BookRaterDBContext context, IMapper mapper)
+        {
+            _context = context;
+            _mapper = mapper;
+        }
+
         public Task<bool> AddBook(BookCreate model)
         {
             throw new NotImplementedException();
