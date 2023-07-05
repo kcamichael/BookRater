@@ -1,4 +1,6 @@
 using BookRater.Data.BookRaterContext;
+using BookRater.Models.MappingConfigurations;
+using BookRater.Services.ReviewServices;
 using Microsoft.EntityFrameworkCore;
 
 var builder = WebApplication.CreateBuilder(args);
@@ -13,6 +15,8 @@ builder.Services.AddDbContext<BookRaterDBContext>(options => {
     options.UseSqlServer(builder.Configuration.GetConnectionString("DefaultConnection"));
 });
 
+builder.Services.AddScoped<IReviewService, ReviewService>();
+builder.Services.AddAutoMapper(typeof(MappingConfiguration));
 var app = builder.Build();
 
 // Configure the HTTP request pipeline.

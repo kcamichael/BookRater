@@ -4,6 +4,7 @@ using BookRater.Data.BookRaterContext;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Infrastructure;
 using Microsoft.EntityFrameworkCore.Metadata;
+using Microsoft.EntityFrameworkCore.Migrations;
 using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 
 #nullable disable
@@ -11,9 +12,11 @@ using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 namespace BookRater.Data.Migrations
 {
     [DbContext(typeof(BookRaterDBContext))]
-    partial class BookRaterDBContextModelSnapshot : ModelSnapshot
+    [Migration("20230630015018_Renamed_ReviewsTables")]
+    partial class Renamed_ReviewsTables
     {
-        protected override void BuildModel(ModelBuilder modelBuilder)
+        /// <inheritdoc />
+        protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
 #pragma warning disable 612, 618
             modelBuilder

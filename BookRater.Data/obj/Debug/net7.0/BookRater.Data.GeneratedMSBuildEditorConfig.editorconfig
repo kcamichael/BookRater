@@ -8,4 +8,8 @@ build_property.PlatformNeutralAssembly =
 build_property.EnforceExtendedAnalyzerRules = 
 build_property._SupportedPlatformList = Linux,macOS,Windows
 build_property.RootNamespace = BookRater.Data
-build_property.ProjectDir = c:\ElevenFiftyBlueBadge165\BookRater\BookRater.Data\
+<<<<<<< HEAD
+build_property.ProjectDir = c:\ElevenFiftyBlueBadge\BookRater\BookRater\BookRater.Data\
+=======
+build_property.ProjectDir = C:\ElevenFiftyBlueBadge\BookRater\BookRater\BookRater.Data\
+>>>>>>> 2601b955940673c5c085803fd4bdfb319c18465b
