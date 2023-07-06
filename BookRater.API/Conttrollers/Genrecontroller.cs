@@ -39,5 +39,21 @@ namespace BookRater.API.Conttrollers
             else
                 return StatusCode(500, "Internal Sever Error");
         }
+
+        [HttpPut]
+        public async Task<IActionResult> Put(GenreEdit model, int id)
+        {
+            if (id != model.Id)
+                return BadRequest("Invalid Id");
+            if (!ModelState.IsValid)
+                return BadRequest(ModelState);
+            if (await _genreService.UpdateGenre(model))
+                return Ok("Genre Updated");
+            else
+                return StatusCode(500, "Internal Server Error");
+        }
+
+        [HttpGet]
+
     }
 }

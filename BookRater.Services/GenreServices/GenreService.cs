@@ -35,5 +35,18 @@ namespace BookRater.Services.GenreServices
             await _context.SaveChangesAsync();
             return true;
         }
+
+        public async Task<bool> UpdateGenre(GenreEdit model)
+        {
+            var genre = await _context.Genre.Include(genre => genre.GenreName).SingleOrDefaultAsync(g => g.Id == model.Id);
+            if (genre is null)
+                return false;
+
+            genre.Id = model.Id;
+            genre.GenreName = model.GenreName;
+
+            await _context.SaveChangesAsync();
+            return true;
+        }
     }
 }
