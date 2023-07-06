@@ -15,7 +15,9 @@ namespace BookRater.Data.BookRaterContext
         public DbSet<AuthorEntity> Author { get; set; }
         public DbSet<BookEntity> Book { get; set; }
         public DbSet<GenreEntity> Genre { get; set; }
-        public DbSet<ReviewEntity> Review { get; set; }
+      
+        public DbSet<ReviewEntity> Reviews { get; set; }
+        public DbSet<BookRating> BookRatings { get; set; }
 
         protected override void OnModelCreating(ModelBuilder builder)
         {
@@ -74,6 +76,50 @@ namespace BookRater.Data.BookRaterContext
                     FirstName = "Jane",
                     LastName = "Austen"
                 }
+            );
+
+              builder.Entity<ReviewEntity>().HasData(
+                new ReviewEntity
+                {
+                    Id = 1,
+                    Comment= "Excellent book",
+                    
+                },
+               new ReviewEntity
+                {
+                    Id = 2,
+                    Comment= "Okay book",
+                    
+                }
+               
+                
+            );
+
+               builder.Entity<BookRating>().HasData(
+                new BookRating
+                {
+                    Id = 1,
+                    Rating= 9,
+                    ReviewEntityId = 1
+                    
+                },
+               new BookRating
+                {
+                    Id = 2,
+                    Rating= 10,
+                    ReviewEntityId = 1
+                    
+                },
+
+                  new BookRating
+                {
+                    Id = 3,
+                    Rating= 10,
+                    ReviewEntityId = 2
+                    
+                }
+               
+                
             );
         }
     }

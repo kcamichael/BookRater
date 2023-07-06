@@ -41,23 +41,8 @@ namespace BookRater.Services.BookServices
             _context.Book.Remove(book);
             await _context.SaveChangesAsync();
             return true;
-
         }
-
-        public async Task<BookDetail> GetDetail(int id)
-        {
-            var book = await _context.Book.Include(b => b.Title).Include(b => b.AuthorId).Include(b => b.GenreId).Include(b => b.Summary).Include(b => b.ReviewId).SingleOrDefaultAsync(x => x.Id == id);     //does this mean if any one of these returns null it wont return the values? Or will it return what it has?
-            if (book is null) return null!;
-
-            return _mapper.Map<BookDetail>(book);
-        }
-
-        public async Task<List<BookListItem>> GetGenreLists()
-        {
-            var book = await _context.Book.ToListAsync();
-            return _mapper.Map<List<BookListItem>>(book);
-        }
-
+        
         public async Task<bool> UpdateBook(BookEdit model)
         {
             var book = await _context.Book.AsNoTracking().SingleOrDefaultAsync(x => x.Id == model.Id);
@@ -74,5 +59,20 @@ namespace BookRater.Services.BookServices
             }
             return false;
         }
+
+        public async Task<BookDetail> GetDetail(int id)
+        {
+            var book = await _context.Book.Include(b => b.AuthorId).Include(b => b.GenreId).Include(b => b.ReviewId).SingleOrDefaultAsync(x => x.Id == id);
+            if (book is null) return null!;
+
+            return _mapper.Map<BookDetail>(book);
+        }
+
+        public async Task<List<BookListItem>> GetGenreLists()
+        {
+            var book = await _context.Book.ToListAsync();
+            return _mapper.Map<List<BookListItem>>(book);
+        }
+
     }
 }
