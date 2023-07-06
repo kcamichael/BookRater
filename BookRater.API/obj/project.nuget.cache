@@ -1,10 +1,6 @@
 {
   "version": 2,
-<<<<<<< HEAD
-  "dgSpecHash": "YhGntDWr5HsHrOM3+l8pnxvW7mx9tdqhaUA3InDGZ3w3qVKI/82d2tdAaMPxgnjvVcgD46DLqzDnnZx9+GUbBw==",
-=======
   "dgSpecHash": "f5zRnbzovDuzwD2ICVpcofp3ddjwF5LXN4H4KGYbApTRD6fTkYYh0x/rP1lu2O/ExtEGfXyNKqS/RkWvbfoDfA==",
->>>>>>> 2601b955940673c5c085803fd4bdfb319c18465b
   "success": true,
   "projectFilePath": "C:\\ElevenFiftyBlueBadge\\BookRater\\BookRater\\BookRater.API\\BookRater.API.csproj",
   "expectedPackageFiles": [
@@ -17,11 +13,7 @@
     "C:\\Users\\ouiza\\.nuget\\packages\\microsoft.aspnetcore.cryptography.keyderivation\\7.0.8\\microsoft.aspnetcore.cryptography.keyderivation.7.0.8.nupkg.sha512",
     "C:\\Users\\ouiza\\.nuget\\packages\\microsoft.aspnetcore.identity.entityframeworkcore\\7.0.8\\microsoft.aspnetcore.identity.entityframeworkcore.7.0.8.nupkg.sha512",
     "C:\\Users\\ouiza\\.nuget\\packages\\microsoft.aspnetcore.openapi\\7.0.7\\microsoft.aspnetcore.openapi.7.0.7.nupkg.sha512",
-<<<<<<< HEAD
-    "C:\\Users\\ouiza\\.nuget\\packages\\microsoft.bcl.asyncinterfaces\\1.1.1\\microsoft.bcl.asyncinterfaces.1.1.1.nupkg.sha512",
-=======
     "C:\\Users\\ouiza\\.nuget\\packages\\microsoft.bcl.asyncinterfaces\\7.0.0\\microsoft.bcl.asyncinterfaces.7.0.0.nupkg.sha512",
->>>>>>> 2601b955940673c5c085803fd4bdfb319c18465b
     "C:\\Users\\ouiza\\.nuget\\packages\\microsoft.csharp\\4.7.0\\microsoft.csharp.4.7.0.nupkg.sha512",
     "C:\\Users\\ouiza\\.nuget\\packages\\microsoft.data.sqlclient\\5.0.2\\microsoft.data.sqlclient.5.0.2.nupkg.sha512",
     "C:\\Users\\ouiza\\.nuget\\packages\\microsoft.data.sqlclient.sni.runtime\\5.0.1\\microsoft.data.sqlclient.sni.runtime.5.0.1.nupkg.sha512",
@@ -93,5 +85,12 @@
     "C:\\Users\\ouiza\\.nuget\\packages\\system.threading.tasks.extensions\\4.5.4\\system.threading.tasks.extensions.4.5.4.nupkg.sha512",
     "C:\\Users\\ouiza\\.nuget\\packages\\system.windows.extensions\\5.0.0\\system.windows.extensions.5.0.0.nupkg.sha512"
   ],
-  "logs": []
+  "logs": [
+    {
+      "code": "Undefined",
+      "level": "Warning",
+      "warningLevel": 1,
+      "message": "Problem reading the cache file C:\\ElevenFiftyBlueBadge\\BookRater\\BookRater\\BookRater.API\\obj\\project.nuget.cache : Invalid property identifier character: <. Path 'version', line 3, position 0."
+    }
+  ]
 }

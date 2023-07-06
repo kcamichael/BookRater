@@ -12,5 +12,6 @@ namespace BookRater.Services.ReviewServices
         public Task<bool> UpdateReview(ReviewEdit model);
         public Task<bool> DeleteReview(int id);
         public  Task<List<ReviewListItem>> GetReviews();
+        public Task<ReviewDetail> GetReview(int id);
     }
 }

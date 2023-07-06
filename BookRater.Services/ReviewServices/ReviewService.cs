@@ -24,7 +24,7 @@ namespace BookRater.Services.ReviewServices
             var review = new ReviewEntity
             {
                Comment = model.Comment,
-               Rating = model.Rating
+              
             };
             await _context.Reviews.AddAsync(review);
             return await _context.SaveChangesAsync() > 0;
@@ -39,9 +39,18 @@ namespace BookRater.Services.ReviewServices
             return await _context.SaveChangesAsync() >0;
         }
 
+        public async Task<ReviewDetail> GetReview(int id)
+        {
+            var review =await _context.Reviews.Include(r => r.BookRatings).FirstOrDefaultAsync(x => x.Id == id);
+            if(review is null)
+                return new ReviewDetail();
+            
+            return _mapper.Map<ReviewDetail>(review);
+        }
+
         public async Task<List<ReviewListItem>> GetReviews()
         {
-            var review = await _context.Reviews.ToListAsync();
+            var review = await _context.Reviews.Include(r => r.BookRatings).ToListAsync();
             var ReviewListItem = _mapper.Map<List<ReviewListItem>>(review);
             return ReviewListItem;
         }
@@ -52,8 +61,6 @@ namespace BookRater.Services.ReviewServices
            if(review is not null)
            {
              review.Comment = model.Comment;
-             review.Rating = model.Rating;
-
              await _context.SaveChangesAsync();
              return true;
            }
