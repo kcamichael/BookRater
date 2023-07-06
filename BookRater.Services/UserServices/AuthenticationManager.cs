@@ -80,14 +80,14 @@ namespace BookRater.Services.UserServices
             return new JwtSecurityTokenHandler().WriteToken(token);
         }
 
-        public async Task<IEnumerable<IdentityError>> Register(UserEntity userEntity)
+        public async Task<IEnumerable<IdentityError>> Register(UserEntityVM userEntity)
         {
             var user = _mapper.Map<UserEntity>(userEntity);
 
             user.UserName = userEntity.Email;
             user.DateCreated = DateTime.UtcNow;
 
-            var result = await _userManager.CreateAsync(user, userEntity.PasswordHash);
+            var result = await _userManager.CreateAsync(user, userEntity.Password);
 
             if (result.Succeeded)
             {

@@ -1,4 +1,5 @@
-using BookRater.Data.Entities;
+using BookRater.Models.UserModels;
+using BookRater.Services.UserServices;
 using Microsoft.AspNetCore.Identity;
 using Microsoft.AspNetCore.Mvc;
 
@@ -19,9 +20,9 @@ namespace BookRater.API.Conttrollers
         [Route("Register")]
         [ProducesResponseType(StatusCodes.Status200OK)]
         [ProducesResponseType(StatusCodes.Status400BadRequest)]
-        public async Task<IActionResult> Register([FromBody] UserEntity userEntity)
+        public async Task<IActionResult> Register([FromBody] UserEntityVM userEntityVM)
         {
-            var errors = await _authManager.Register(userEntity);
+            var errors = await _authManager.Register(userEntityVM);
 
             if (errors.Any())
             {
@@ -38,16 +39,14 @@ namespace BookRater.API.Conttrollers
         [Route("Login")]
         [ProducesResponseType(StatusCodes.Status200OK)]
         [ProducesResponseType(StatusCodes.Status400BadRequest)]
-        public async Task<IActionResult> Login([FromBody] LoginVM loginVM)
+        public async Task<IActionResult> Login([FromBody] Login login)
         {
-            var authResponse = await _authManager.Login(loginVM);
+            var authResponse = await _authManager.Login(login);
 
             if (authResponse == null)
                 return Unauthorized();
 
             return Ok(authResponse);
         }
-
-
     }
 }
