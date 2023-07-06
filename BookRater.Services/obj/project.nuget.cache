@@ -1,8 +1,14 @@
 {
   "version": 2,
+<<<<<<< HEAD
+  "dgSpecHash": "/pCMpKFyJ2x3ll8ekM9+kTa9edLvAjXrmlmU336igmZtVvb1Hpq9ais5vzTZTYp42N53kc609uPKmvQAQ4Eg4g==",
+  "success": true,
+  "projectFilePath": "C:\\ElevenFiftyBlueBadge165\\BookRater\\BookRater.Services\\BookRater.Services.csproj",
+=======
   "dgSpecHash": "ccajoRumHGlD4J6YQJ+UCsWS/BjE441SX+j27kU4w/Ox3jUUWZLwL2pBYGkIqwkudK2eJe21z/c16zoK9L4tNg==",
   "success": true,
   "projectFilePath": "C:\\ElevenFiftyBlueBadge\\BookRater\\BookRater\\BookRater.Services\\BookRater.Services.csproj",
+>>>>>>> develop
   "expectedPackageFiles": [
     "C:\\Users\\ouiza\\.nuget\\packages\\automapper\\12.0.1\\automapper.12.0.1.nupkg.sha512",
     "C:\\Users\\ouiza\\.nuget\\packages\\automapper.extensions.microsoft.dependencyinjection\\12.0.1\\automapper.extensions.microsoft.dependencyinjection.12.0.1.nupkg.sha512",

@@ -3358,11 +3358,19 @@
   "project": {
     "version": "1.0.0",
     "restore": {
+<<<<<<< HEAD
+      "projectUniqueName": "C:\\ElevenFiftyBlueBadge165\\BookRater\\BookRater.Data\\BookRater.Data.csproj",
+      "projectName": "BookRater.Data",
+      "projectPath": "C:\\ElevenFiftyBlueBadge165\\BookRater\\BookRater.Data\\BookRater.Data.csproj",
+      "packagesPath": "C:\\Users\\clarf\\.nuget\\packages\\",
+      "outputPath": "C:\\ElevenFiftyBlueBadge165\\BookRater\\BookRater.Data\\obj\\",
+=======
       "projectUniqueName": "C:\\ElevenFiftyBlueBadge\\BookRater\\BookRater\\BookRater.Data\\BookRater.Data.csproj",
       "projectName": "BookRater.Data",
       "projectPath": "C:\\ElevenFiftyBlueBadge\\BookRater\\BookRater\\BookRater.Data\\BookRater.Data.csproj",
       "packagesPath": "C:\\Users\\ouiza\\.nuget\\packages\\",
       "outputPath": "C:\\ElevenFiftyBlueBadge\\BookRater\\BookRater\\BookRater.Data\\obj\\",
+>>>>>>> develop
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\ouiza\\AppData\\Roaming\\NuGet\\NuGet.Config",

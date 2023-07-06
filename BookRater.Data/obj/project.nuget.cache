@@ -1,8 +1,14 @@
 {
   "version": 2,
+<<<<<<< HEAD
+  "dgSpecHash": "V7QNsgnUgoXneDJ21J3jFv7o2b2OW18fffADvmv7quac1LHHXJ94Mobza0Ule1jNztWIfjnswP1Ntjw5YMveGg==",
+  "success": true,
+  "projectFilePath": "C:\\ElevenFiftyBlueBadge165\\BookRater\\BookRater.Data\\BookRater.Data.csproj",
+=======
   "dgSpecHash": "oFsa2NzlfxhmyWIgUgq3dRUbtdN1ISs19I5inDs4mb9nFrupDDWxABOdv5OyxgQxncd0utElSd0eBEtF3qhpMA==",
   "success": true,
   "projectFilePath": "C:\\ElevenFiftyBlueBadge\\BookRater\\BookRater\\BookRater.Data\\BookRater.Data.csproj",
+>>>>>>> develop
   "expectedPackageFiles": [
     "C:\\Users\\ouiza\\.nuget\\packages\\azure.core\\1.24.0\\azure.core.1.24.0.nupkg.sha512",
     "C:\\Users\\ouiza\\.nuget\\packages\\azure.identity\\1.6.0\\azure.identity.1.6.0.nupkg.sha512",
