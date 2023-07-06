@@ -7,5 +7,6 @@ namespace BookRater.Services.GenreServices
         Task<bool> CreateGenre(GenreCreate model);
         Task<bool> DeleteGenre(int id);
         Task<bool> UpdateGenre(GenreEdit model);
+        Task<List<GenreListItem>> GetGenres();
     }
 }

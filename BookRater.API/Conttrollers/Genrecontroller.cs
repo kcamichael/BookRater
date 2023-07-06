@@ -54,6 +54,10 @@ namespace BookRater.API.Conttrollers
         }
 
         [HttpGet]
+        public async Task<IActionResult> Get()
+        {
+            return Ok(await _genreService.GetGenres());
+        }
 
     }
 }

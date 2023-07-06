@@ -48,5 +48,14 @@ namespace BookRater.Services.GenreServices
             await _context.SaveChangesAsync();
             return true;
         }
+
+        public async Task<List<GenreListItem>> GetGenres()
+        {
+            var genres = await _context.Genre.ToListAsync();
+
+            var genresListItems = _mapper.Map<List<GenreListItem>>(genres);
+
+            return genresListItems;
+        }
     }
 }
