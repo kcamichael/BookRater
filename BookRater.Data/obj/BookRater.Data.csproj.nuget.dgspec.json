@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "c:\\ElevenFiftyBlueBadge165\\BookRater\\BookRater.Data\\BookRater.Data.csproj": {}
+    "C:\\ElevenFiftyBlueBadge165\\BookRater\\BookRater.Data\\BookRater.Data.csproj": {}
   },
   "projects": {
-    "c:\\ElevenFiftyBlueBadge165\\BookRater\\BookRater.Data\\BookRater.Data.csproj": {
+    "C:\\ElevenFiftyBlueBadge165\\BookRater\\BookRater.Data\\BookRater.Data.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "c:\\ElevenFiftyBlueBadge165\\BookRater\\BookRater.Data\\BookRater.Data.csproj",
+        "projectUniqueName": "C:\\ElevenFiftyBlueBadge165\\BookRater\\BookRater.Data\\BookRater.Data.csproj",
         "projectName": "BookRater.Data",
-        "projectPath": "c:\\ElevenFiftyBlueBadge165\\BookRater\\BookRater.Data\\BookRater.Data.csproj",
+        "projectPath": "C:\\ElevenFiftyBlueBadge165\\BookRater\\BookRater.Data\\BookRater.Data.csproj",
         "packagesPath": "C:\\Users\\clarf\\.nuget\\packages\\",
-        "outputPath": "c:\\ElevenFiftyBlueBadge165\\BookRater\\BookRater.Data\\obj\\",
+        "outputPath": "C:\\ElevenFiftyBlueBadge165\\BookRater\\BookRater.Data\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\clarf\\AppData\\Roaming\\NuGet\\NuGet.Config"
