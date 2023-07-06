@@ -12,7 +12,6 @@ namespace BookRater.Models.ReviewModels
         [Required]
         [MaxLength(350)]
         public string Comment { get; set; }
-        [Required]
-        public int Rating { get; set; }
+       
     }
 }
