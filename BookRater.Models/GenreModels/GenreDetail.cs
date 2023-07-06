@@ -1,10 +1,8 @@
-using System.ComponentModel.DataAnnotations;
-
 namespace BookRater.Models.GenreModels
 {
-    public class GenreCreate
+    public class GenreDetail
     {
-        [Required]
+        public int Id { get; set; }
         public string GenreName { get; set; } = string.Empty;
     }
 }

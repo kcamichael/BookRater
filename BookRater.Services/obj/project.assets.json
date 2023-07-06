@@ -3456,11 +3456,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\ElevenFiftyBlueBadge165\\BookRater\\BookRater.Services\\BookRater.Services.csproj",
+      "projectUniqueName": "c:\\ElevenFiftyBlueBadge165\\BookRater\\BookRater.Services\\BookRater.Services.csproj",
       "projectName": "BookRater.Services",
-      "projectPath": "C:\\ElevenFiftyBlueBadge165\\BookRater\\BookRater.Services\\BookRater.Services.csproj",
+      "projectPath": "c:\\ElevenFiftyBlueBadge165\\BookRater\\BookRater.Services\\BookRater.Services.csproj",
       "packagesPath": "C:\\Users\\clarf\\.nuget\\packages\\",
-      "outputPath": "C:\\ElevenFiftyBlueBadge165\\BookRater\\BookRater.Services\\obj\\",
+      "outputPath": "c:\\ElevenFiftyBlueBadge165\\BookRater\\BookRater.Services\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\clarf\\AppData\\Roaming\\NuGet\\NuGet.Config"
@@ -3475,11 +3475,11 @@
         "net7.0": {
           "targetAlias": "net7.0",
           "projectReferences": {
-            "C:\\ElevenFiftyBlueBadge165\\BookRater\\BookRater.Data\\BookRater.Data.csproj": {
-              "projectPath": "C:\\ElevenFiftyBlueBadge165\\BookRater\\BookRater.Data\\BookRater.Data.csproj"
+            "c:\\ElevenFiftyBlueBadge165\\BookRater\\BookRater.Data\\BookRater.Data.csproj": {
+              "projectPath": "c:\\ElevenFiftyBlueBadge165\\BookRater\\BookRater.Data\\BookRater.Data.csproj"
             },
-            "C:\\ElevenFiftyBlueBadge165\\BookRater\\BookRater.Models\\BookRater.Models.csproj": {
-              "projectPath": "C:\\ElevenFiftyBlueBadge165\\BookRater\\BookRater.Models\\BookRater.Models.csproj"
+            "c:\\ElevenFiftyBlueBadge165\\BookRater\\BookRater.Models\\BookRater.Models.csproj": {
+              "projectPath": "c:\\ElevenFiftyBlueBadge165\\BookRater\\BookRater.Models\\BookRater.Models.csproj"
             }
           }
         }

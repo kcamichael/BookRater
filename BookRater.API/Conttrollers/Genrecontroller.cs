@@ -8,11 +8,11 @@ namespace BookRater.API.Conttrollers
     [Route("api/[controller]")]
     public class Genrecontroller : ControllerBase
     {
-        private readonly IGenreService _gService;
+        private readonly IGenreService _genreService;
 
-        public Genrecontroller(IGenreService gService)
+        public Genrecontroller(IGenreService genreService)
         {
-            _gService = gService;
+            _genreService = genreService;
         }
 
         [HttpPost]
@@ -23,12 +23,21 @@ namespace BookRater.API.Conttrollers
                 return BadRequest(ModelState);
             }
 
-            if (await _gService.CreateGenre(model))
+            if (await _genreService.CreateGenre(model))
             {
                 return Ok("Success");
             }
             else
                 return StatusCode(500, "Internal Server Error.");
+        }
+
+        [HttpDelete]
+        public async Task<IActionResult> Delete(int id)
+        {
+            if (await _genreService.DeleteGenre(id))
+                return Ok("Genre Deleted!");
+            else
+                return StatusCode(500, "Internal Sever Error");
         }
     }
 }

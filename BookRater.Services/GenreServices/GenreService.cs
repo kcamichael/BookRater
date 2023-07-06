@@ -2,6 +2,7 @@ using AutoMapper;
 using BookRater.Data.BookRaterContext;
 using BookRater.Data.Entities;
 using BookRater.Models.GenreModels;
+using Microsoft.EntityFrameworkCore;
 
 namespace BookRater.Services.GenreServices
 {
@@ -23,6 +24,16 @@ namespace BookRater.Services.GenreServices
 
             await _context.Genre.AddAsync(entity);
             return await _context.SaveChangesAsync() > 0;
+        }
+
+        public async Task<bool> DeleteGenre(int id)
+        {
+            var genre = await _context.Genre.FirstOrDefaultAsync(g => g.Id == id);
+            if (genre is null)
+                return false;
+            _context.Genre.Remove(genre);
+            await _context.SaveChangesAsync();
+            return true;
         }
     }
 }
