@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "GfjhDaJSsllcroVSWZegng6ISLR165/4Z9hQ2ij84JEGnw5Jw6/uCAWdu8CdstF3vYjkEgHpxT4He2eAFCX4nw==",
+  "dgSpecHash": "/pCMpKFyJ2x3ll8ekM9+kTa9edLvAjXrmlmU336igmZtVvb1Hpq9ais5vzTZTYp42N53kc609uPKmvQAQ4Eg4g==",
   "success": true,
-  "projectFilePath": "c:\\ElevenFiftyBlueBadge165\\BookRater\\BookRater.Services\\BookRater.Services.csproj",
+  "projectFilePath": "C:\\ElevenFiftyBlueBadge165\\BookRater\\BookRater.Services\\BookRater.Services.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\clarf\\.nuget\\packages\\automapper\\12.0.1\\automapper.12.0.1.nupkg.sha512",
     "C:\\Users\\clarf\\.nuget\\packages\\automapper.extensions.microsoft.dependencyinjection\\12.0.1\\automapper.extensions.microsoft.dependencyinjection.12.0.1.nupkg.sha512",
