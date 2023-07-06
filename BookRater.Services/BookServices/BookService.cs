@@ -58,9 +58,21 @@ namespace BookRater.Services.BookServices
             return _mapper.Map<List<BookListItem>>(book);
         }
 
-        public Task<bool> UpdateBook(BookEdit model)
+        public async Task<bool> UpdateBook(BookEdit model)
         {
-            throw new NotImplementedException();
+            var book = await _context.Book.AsNoTracking().SingleOrDefaultAsync(x => x.Id == model.Id);
+            if (book is null) return false;
+
+            var conversion = _mapper.Map<BookEdit, BookEntity>(model);
+
+            if (conversion is not null)
+            {
+                _context.Book.Update(conversion);
+
+                await _context.SaveChangesAsync();
+                return true;
+            }
+            return false;
         }
     }
 }
