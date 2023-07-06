@@ -6,6 +6,7 @@ using AutoMapper;
 using BookRater.Data.BookRaterContext;
 using BookRater.Data.Entities;
 using BookRater.Models.BookModels;
+using Microsoft.EntityFrameworkCore;
 
 namespace BookRater.Services.BookServices
 {
@@ -32,19 +33,29 @@ namespace BookRater.Services.BookServices
             return false;
         }
 
-        public Task<bool> DeleteBook(int id)
+        public async Task<bool> DeleteBook(int id)
         {
-            throw new NotImplementedException();
+            var book = await _context.Book.FirstOrDefaultAsync(b => b.Id == id);
+            if (book is null)
+                return false;
+            _context.Book.Remove(book);
+            await _context.SaveChangesAsync();
+            return true;
+
         }
 
-        public Task<BookDetail> GetDetail(int id)
+        public async Task<BookDetail> GetDetail(int id)
         {
-            throw new NotImplementedException();
+            var book = await _context.Book.Include(b => b.Title).Include(b => b.AuthorId).Include(b => b.GenreId).Include(b => b.Summary).Include(b => b.ReviewId).SingleOrDefaultAsync(x => x.Id == id);     //does this mean if any one of these returns null it wont return the values? Or will it return what it has?
+            if (book is null) return null!;
+
+            return _mapper.Map<BookDetail>(book);
         }
 
-        public Task<List<BookListItem>> GetGenreLists()
+        public async Task<List<BookListItem>> GetGenreLists()
         {
-            throw new NotImplementedException();
+            var book = await _context.Book.ToListAsync();
+            return _mapper.Map<List<BookListItem>>(book);
         }
 
         public Task<bool> UpdateBook(BookEdit model)
