@@ -24,6 +24,16 @@ namespace BookRater.API.Conttrollers
         {
             return Ok(await _reviewService.GetReviews());
         }
+        
+        [HttpGet("{id:int}")]
+        public async Task<IActionResult> Get(int id)
+        {
+            var review = await _reviewService.GetReview(id);
+            if(review is null)
+                return NotFound();
+            else
+                return Ok(review);    
+        }
 
         [HttpPost]
         public async Task<IActionResult> Post(ReviewCreate model)

@@ -5,10 +5,10 @@ using System.Threading.Tasks;
 
 namespace BookRater.Models.ReviewModels
 {
-    public class ReviewListItem
+    public class BookRatingListItem
     {
         
-        public string Comment { get; set; }
-        // public int Rating { get; set; }
+        public int Id { get; set; }
+        public int Rating { get; set; }
     }
 }

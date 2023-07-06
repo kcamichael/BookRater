@@ -16,6 +16,7 @@ namespace BookRater.Models.MappingConfigurations
             CreateMap<ReviewEntity,ReviewDetail>().ReverseMap();
             CreateMap<ReviewEntity,ReviewEdit>().ReverseMap();
             CreateMap<ReviewEntity,ReviewListItem>().ReverseMap();
+            CreateMap<BookRating,BookRatingListItem>().ReverseMap();
         }
     }
 }
