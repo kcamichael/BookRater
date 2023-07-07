@@ -8,5 +8,7 @@ namespace BookRater.Models.ReviewModels
     public class ReviewListItem
     {
         
+        public string Comment { get; set; }
+        // public int Rating { get; set; }
     }
 }
