@@ -3456,12 +3456,23 @@
   "project": {
     "version": "1.0.0",
     "restore": {
+<<<<<<< HEAD
       "projectUniqueName": "C:\\ElevenFiftyBlueBadge\\BookRater\\BookRater\\BookRater.Services\\BookRater.Services.csproj",
       "projectName": "BookRater.Services",
       "projectPath": "C:\\ElevenFiftyBlueBadge\\BookRater\\BookRater\\BookRater.Services\\BookRater.Services.csproj",
       "packagesPath": "C:\\Users\\ouiza\\.nuget\\packages\\",
       "outputPath": "C:\\ElevenFiftyBlueBadge\\BookRater\\BookRater\\BookRater.Services\\obj\\",
+=======
+      "projectUniqueName": "C:\\ElevenFiftyBlueBadge165\\BookRater\\BookRater.Services\\BookRater.Services.csproj",
+      "projectName": "BookRater.Services",
+      "projectPath": "C:\\ElevenFiftyBlueBadge165\\BookRater\\BookRater.Services\\BookRater.Services.csproj",
+      "packagesPath": "C:\\Users\\clarf\\.nuget\\packages\\",
+      "outputPath": "C:\\ElevenFiftyBlueBadge165\\BookRater\\BookRater.Services\\obj\\",
+>>>>>>> a6586eb6bb421a1429bff9c9122b93bab7742803
       "projectStyle": "PackageReference",
+      "fallbackFolders": [
+        "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+      ],
       "configFilePaths": [
         "C:\\Users\\ouiza\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
@@ -3477,11 +3488,19 @@
         "net7.0": {
           "targetAlias": "net7.0",
           "projectReferences": {
+<<<<<<< HEAD
             "C:\\ElevenFiftyBlueBadge\\BookRater\\BookRater\\BookRater.Data\\BookRater.Data.csproj": {
               "projectPath": "C:\\ElevenFiftyBlueBadge\\BookRater\\BookRater\\BookRater.Data\\BookRater.Data.csproj"
             },
             "C:\\ElevenFiftyBlueBadge\\BookRater\\BookRater\\BookRater.Models\\BookRater.Models.csproj": {
               "projectPath": "C:\\ElevenFiftyBlueBadge\\BookRater\\BookRater\\BookRater.Models\\BookRater.Models.csproj"
+=======
+            "C:\\ElevenFiftyBlueBadge165\\BookRater\\BookRater.Data\\BookRater.Data.csproj": {
+              "projectPath": "C:\\ElevenFiftyBlueBadge165\\BookRater\\BookRater.Data\\BookRater.Data.csproj"
+            },
+            "C:\\ElevenFiftyBlueBadge165\\BookRater\\BookRater.Models\\BookRater.Models.csproj": {
+              "projectPath": "C:\\ElevenFiftyBlueBadge165\\BookRater\\BookRater.Models\\BookRater.Models.csproj"
+>>>>>>> a6586eb6bb421a1429bff9c9122b93bab7742803
             }
           }
         }
@@ -3526,7 +3545,11 @@
       "code": "Undefined",
       "level": "Warning",
       "warningLevel": 1,
+<<<<<<< HEAD
       "message": "Problem reading the cache file C:\\ElevenFiftyBlueBadge\\BookRater\\BookRater\\BookRater.Services\\obj\\project.nuget.cache : Invalid property identifier character: <. Path 'version', line 3, position 0."
+=======
+      "message": "Problem reading the cache file C:\\ElevenFiftyBlueBadge165\\BookRater\\BookRater.Services\\obj\\project.nuget.cache : Invalid property identifier character: <. Path 'version', line 3, position 0."
+>>>>>>> a6586eb6bb421a1429bff9c9122b93bab7742803
     }
   ]
 }
