@@ -14,7 +14,7 @@ namespace BookRater.Services.BookServices
         Task<bool> UpdateBook(BookEdit model);
         Task<bool> DeleteBook(int id);
         public Task<BookDetail> GetDetail(int id);
-        public Task<List<BookListItem>> GetBookLists();
+        public Task<List<BookListItem>> GetBooks();
         public Task<List<BookListItem>> GetBookByGenre();
         public Task<List<BookListItem>> GetBookByAuthor();
     }
