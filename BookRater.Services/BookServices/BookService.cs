@@ -41,26 +41,48 @@ namespace BookRater.Services.BookServices
             _context.Book.Remove(book);
             await _context.SaveChangesAsync();
             return true;
+        }
 
+        public async Task<bool> UpdateBook(BookEdit model)
+        {
+            var book = await _context.Book.AsNoTracking().SingleOrDefaultAsync(x => x.Id == model.Id);
+            if (book is null) return false;
+
+            var conversion = _mapper.Map<BookEdit, BookEntity>(model);
+
+            if (conversion is not null)
+            {
+                _context.Book.Update(conversion);
+
+                await _context.SaveChangesAsync();
+                return true;
+            }
+            return false;
         }
 
         public async Task<BookDetail> GetDetail(int id)
         {
-            var book = await _context.Book.Include(b => b.Title).Include(b => b.AuthorId).Include(b => b.GenreId).Include(b => b.Summary).Include(b => b.ReviewId).SingleOrDefaultAsync(x => x.Id == id);     //does this mean if any one of these returns null it wont return the values? Or will it return what it has?
+            var book = await _context.Book.Include(b => b.AuthorId).Include(b => b.GenreId).Include(b => b.ReviewId).SingleOrDefaultAsync(x => x.Id == id);
             if (book is null) return null!;
 
             return _mapper.Map<BookDetail>(book);
         }
 
-        public async Task<List<BookListItem>> GetGenreLists()
+        public async Task<List<BookListItem>> GetBooks()
         {
-            var book = await _context.Book.ToListAsync();
+            return await _context.Book.Select(b => _mapper.Map<BookListItem>(p)).ToListAsync();
+        }
+
+        public async Task<List<BookListItem>> GetBookByGenre(int GenreId)
+        {
+            var book = await _context.Book.FindAsync(GenreId);
             return _mapper.Map<List<BookListItem>>(book);
         }
 
-        public Task<bool> UpdateBook(BookEdit model)
+        public async Task<List<BookListItem>> GetBookByAuthor(int AuthorId)
         {
-            throw new NotImplementedException();
+            var book = await _context.Book.FindAsync(AuthorId);
+            return _mapper.Map<List<BookListItem>>(book);
         }
     }
 }
