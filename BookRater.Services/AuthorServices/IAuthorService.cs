@@ -4,9 +4,9 @@ using System.Linq;
 using System.Threading.Tasks;
 using BookRater.Models.AuthorModels;
 
-namespace BookRater.Services.AuthorServices
+namespace BookRater.Services.AuthorService
 {
-    public interface IAuthorServices
+    public interface IAuthorService
     {
         Task<bool> CreateAuthor(AuthorCreateVM model);
 
