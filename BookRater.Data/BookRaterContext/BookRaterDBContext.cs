@@ -8,7 +8,7 @@ namespace BookRater.Data.BookRaterContext
     {
         public BookRaterDBContext(DbContextOptions<BookRaterDBContext> options) : base(options) { }
 
-        public DbSet<AuthorEntity> Author { get; set; }
+        public DbSet<AuthorEntity> Authors { get; set; }
         public DbSet<BookEntity> Book { get; set; }
         public DbSet<GenreEntity> Genre { get; set; }
         public DbSet<ReviewEntity> Reviews { get; set; }

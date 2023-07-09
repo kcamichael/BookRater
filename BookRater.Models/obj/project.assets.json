@@ -3431,32 +3431,92 @@
     ]
   },
   "packageFolders": {
+<<<<<<< HEAD
     "C:\\Users\\clarf\\.nuget\\packages\\": {}
+=======
+<<<<<<< HEAD
+    "C:\\Users\\seand\\.nuget\\packages\\": {},
+    "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages": {}
+=======
+    "C:\\Users\\kcami\\.nuget\\packages\\": {}
+>>>>>>> f45083ecd9fd967c037f6ff244394d0adbcc0891
+>>>>>>> 916e084edaffe4c0e0bd9add483263b10e6c93d6
   },
   "project": {
     "version": "1.0.0",
     "restore": {
+<<<<<<< HEAD
       "projectUniqueName": "C:\\ElevenFiftyBlueBadge165\\BookRater\\BookRater.Models\\BookRater.Models.csproj",
       "projectName": "BookRater.Models",
       "projectPath": "C:\\ElevenFiftyBlueBadge165\\BookRater\\BookRater.Models\\BookRater.Models.csproj",
       "packagesPath": "C:\\Users\\clarf\\.nuget\\packages\\",
       "outputPath": "C:\\ElevenFiftyBlueBadge165\\BookRater\\BookRater.Models\\obj\\",
+=======
+<<<<<<< HEAD
+      "projectUniqueName": "C:\\ElevenFiftyBlueBadge\\BookRater\\BookRater\\BookRater.Models\\BookRater.Models.csproj",
+      "projectName": "BookRater.Models",
+      "projectPath": "C:\\ElevenFiftyBlueBadge\\BookRater\\BookRater\\BookRater.Models\\BookRater.Models.csproj",
+      "packagesPath": "C:\\Users\\ouiza\\.nuget\\packages\\",
+      "outputPath": "C:\\ElevenFiftyBlueBadge\\BookRater\\BookRater\\BookRater.Models\\obj\\",
+=======
+      "projectUniqueName": "C:\\ElevenFiftyBlueBadge165\\BookRater\\BookRater.Models\\BookRater.Models.csproj",
+      "projectName": "BookRater.Models",
+      "projectPath": "C:\\ElevenFiftyBlueBadge165\\BookRater\\BookRater.Models\\BookRater.Models.csproj",
+<<<<<<< HEAD
+      "packagesPath": "C:\\Users\\seand\\.nuget\\packages\\",
+=======
+      "packagesPath": "C:\\Users\\kcami\\.nuget\\packages\\",
+>>>>>>> f45083ecd9fd967c037f6ff244394d0adbcc0891
+      "outputPath": "C:\\ElevenFiftyBlueBadge165\\BookRater\\BookRater.Models\\obj\\",
+>>>>>>> a6586eb6bb421a1429bff9c9122b93bab7742803
+>>>>>>> 916e084edaffe4c0e0bd9add483263b10e6c93d6
       "projectStyle": "PackageReference",
+      "fallbackFolders": [
+        "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+      ],
       "configFilePaths": [
+<<<<<<< HEAD
         "C:\\Users\\clarf\\AppData\\Roaming\\NuGet\\NuGet.Config"
+=======
+<<<<<<< HEAD
+        "C:\\Users\\seand\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+=======
+        "C:\\Users\\kcami\\AppData\\Roaming\\NuGet\\NuGet.Config"
+>>>>>>> f45083ecd9fd967c037f6ff244394d0adbcc0891
+>>>>>>> 916e084edaffe4c0e0bd9add483263b10e6c93d6
       ],
       "originalTargetFrameworks": [
         "net7.0"
       ],
       "sources": {
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+        "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+        "C:\\Program Files\\dotnet\\library-packs": {},
+=======
+>>>>>>> f45083ecd9fd967c037f6ff244394d0adbcc0891
+>>>>>>> 916e084edaffe4c0e0bd9add483263b10e6c93d6
         "https://api.nuget.org/v3/index.json": {}
       },
       "frameworks": {
         "net7.0": {
           "targetAlias": "net7.0",
           "projectReferences": {
+<<<<<<< HEAD
             "C:\\ElevenFiftyBlueBadge165\\BookRater\\BookRater.Data\\BookRater.Data.csproj": {
               "projectPath": "C:\\ElevenFiftyBlueBadge165\\BookRater\\BookRater.Data\\BookRater.Data.csproj"
+=======
+<<<<<<< HEAD
+            "C:\\ElevenFiftyBlueBadge\\BookRater\\BookRater\\BookRater.Data\\BookRater.Data.csproj": {
+              "projectPath": "C:\\ElevenFiftyBlueBadge\\BookRater\\BookRater\\BookRater.Data\\BookRater.Data.csproj"
+=======
+            "C:\\ElevenFiftyBlueBadge165\\BookRater\\BookRater.Data\\BookRater.Data.csproj": {
+              "projectPath": "C:\\ElevenFiftyBlueBadge165\\BookRater\\BookRater.Data\\BookRater.Data.csproj"
+>>>>>>> a6586eb6bb421a1429bff9c9122b93bab7742803
+>>>>>>> 916e084edaffe4c0e0bd9add483263b10e6c93d6
             }
           }
         }
@@ -3492,7 +3552,15 @@
             "privateAssets": "all"
           }
         },
+<<<<<<< HEAD
         "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.203\\RuntimeIdentifierGraph.json"
+=======
+<<<<<<< HEAD
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.203\\RuntimeIdentifierGraph.json"
+=======
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.304\\RuntimeIdentifierGraph.json"
+>>>>>>> f45083ecd9fd967c037f6ff244394d0adbcc0891
+>>>>>>> 916e084edaffe4c0e0bd9add483263b10e6c93d6
       }
     }
   },
@@ -3501,7 +3569,15 @@
       "code": "Undefined",
       "level": "Warning",
       "warningLevel": 1,
+<<<<<<< HEAD
       "message": "Problem reading the cache file C:\\ElevenFiftyBlueBadge165\\BookRater\\BookRater.Models\\obj\\project.nuget.cache : Invalid property identifier character: <. Path 'version', line 3, position 0."
+=======
+<<<<<<< HEAD
+      "message": "Problem reading the cache file C:\\ElevenFiftyBlueBadge\\BookRater\\BookRater\\BookRater.Models\\obj\\project.nuget.cache : Invalid property identifier character: <. Path 'version', line 3, position 0."
+=======
+      "message": "Problem reading the cache file C:\\ElevenFiftyBlueBadge165\\BookRater\\BookRater.Models\\obj\\project.nuget.cache : Invalid property identifier character: <. Path 'version', line 3, position 0."
+>>>>>>> a6586eb6bb421a1429bff9c9122b93bab7742803
+>>>>>>> 916e084edaffe4c0e0bd9add483263b10e6c93d6
     }
   ]
 }
