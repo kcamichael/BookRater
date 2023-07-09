@@ -1,7 +1,7 @@
-using AutoMapper;
 using BookRater.Data.BookRaterContext;
 using BookRater.Data.Entities;
 using BookRater.Models.GenreModels;
+using AutoMapper;
 using Microsoft.EntityFrameworkCore;
 
 namespace BookRater.Services.GenreServices
