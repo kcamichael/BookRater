@@ -23,6 +23,39 @@ namespace BookRater.API.Conttrollers
             return Ok(await _bookService.GetDetail());
         }
 
+        [HttpGet("{id:int}")]
+        public async Task<IActionResult> Get(int id)
+        {
+            var book = await _bookService.GetBook(id);
+            if (book is null) return NotFound();
+            else
+            {
+                return Ok(book);
+            }
+        }
+
+        [HttpGet("{GenreId:int}")]
+        public async Task<IActionResult> Get(int GenreId)
+        {
+            var book = await _bookService.GetBook(GenreId);
+            if (book is null) return NotFound();
+            else
+            {
+                return Ok(book);
+            }
+        }
+
+        [HttpGet("{AuthorId:int}")]
+        public async Task<IActionResult> Get(int AuthorId)
+        {
+            var book = await _bookService.GetBook(AuthorId);
+            if (book is null) return NotFound();
+            else
+            {
+                return Ok(book);
+            }
+        }
+
         [HttpPost]
         public async Task<IActionResult> Post(BookCreate model)
         {
@@ -42,10 +75,8 @@ namespace BookRater.API.Conttrollers
         {
             if (id != model.Id)
                 return BadRequest("Invalid Id");
-
             if (!ModelState.IsValid)
                 return BadRequest(ModelState);
-
             if (await _bookService.UpdateBook(model))
                 return Ok("Book Updated!");
             else
@@ -63,7 +94,5 @@ namespace BookRater.API.Conttrollers
             else
                 return StatusCode(500, "Internal Server Error.");
         }
-
-
     }
 }

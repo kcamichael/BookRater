@@ -51,9 +51,13 @@ builder.Services.AddIdentityCore<UserEntity>()
                 .AddEntityFrameworkStores<BookRaterDBContext>();
 
 builder.Services.AddScoped<IReviewService, ReviewService>();
+<<<<<<< HEAD
 builder.Services.AddScoped<IGenreService, GenreService>();
 builder.Services.AddScoped<IAuthenticationManager, AuthenticationManager>();
 
+=======
+builder.Services.AddScoped<IBookService, BookService>();
+>>>>>>> 363c8a8599c3fba68b1261b261293e22dbda9914
 builder.Services.AddAutoMapper(typeof(MappingConfiguration));
 
 builder.Services.AddHttpContextAccessor();
