@@ -6,6 +6,7 @@ using AutoMapper;
 using BookRater.Data.Entities;
 using BookRater.Models.GenreModels;
 using BookRater.Models.ReviewModels;
+using BookRater.Models.UserModels;
 
 namespace BookRater.Models.MappingConfigurations
 {
@@ -17,9 +18,15 @@ namespace BookRater.Models.MappingConfigurations
             CreateMap<ReviewEntity, ReviewDetail>().ReverseMap();
             CreateMap<ReviewEntity, ReviewEdit>().ReverseMap();
             CreateMap<ReviewEntity, ReviewListItem>().ReverseMap();
+
             CreateMap<BookRating, BookRatingListItem>().ReverseMap();
+
+            CreateMap<GenreEntity, GenreCreate>().ReverseMap();
+            CreateMap<GenreEntity, GenreDetail>().ReverseMap();
+            CreateMap<GenreEntity, GenreEdit>().ReverseMap();
             CreateMap<GenreEntity, GenreListItem>().ReverseMap();
-            CreateMap<GenreEntity, GenreListItem>().ReverseMap();
+
+            CreateMap<UserEntity, UserEntityVM>().ReverseMap();
         }
     }
 }

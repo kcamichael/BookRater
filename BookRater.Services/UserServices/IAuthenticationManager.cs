@@ -1,4 +1,3 @@
-using BookRater.Data.Entities;
 using BookRater.Models.UserModels;
 using Microsoft.AspNetCore.Identity;
 

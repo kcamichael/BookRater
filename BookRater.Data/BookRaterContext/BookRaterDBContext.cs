@@ -1,4 +1,5 @@
 using BookRater.Data.Entities;
+using Microsoft.AspNetCore.Identity;
 using Microsoft.AspNetCore.Identity.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore;
 
@@ -14,9 +15,23 @@ namespace BookRater.Data.BookRaterContext
         public DbSet<ReviewEntity> Reviews { get; set; }
         public DbSet<BookRating> BookRatings { get; set; }
 
+
         protected override void OnModelCreating(ModelBuilder builder)
         {
             base.OnModelCreating(builder);
+
+            builder.Entity<IdentityRole>().HasData(
+                new IdentityRole
+                {
+                    Name = "Administrator",
+                    NormalizedName = "ADMINISTRATOR"
+                },
+                new IdentityRole
+                {
+                    Name = "User",
+                    NormalizedName = "USER"
+                }
+            );
 
             builder.Entity<GenreEntity>().HasData(
                 new GenreEntity
