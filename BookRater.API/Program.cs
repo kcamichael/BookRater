@@ -1,11 +1,7 @@
 using BookRater.Data.BookRaterContext;
 using BookRater.Data.Entities;
 using BookRater.Models.MappingConfigurations;
-<<<<<<< HEAD
-using BookRater.Services.GenreServices;
-=======
 using BookRater.Services.BookServices;
->>>>>>> 4b73ebc4b3d073ce2fd6af93d4bd955b323d86e5
 using BookRater.Services.ReviewServices;
 using BookRater.Services.UserServices;
 using Microsoft.AspNetCore.Identity;
@@ -55,13 +51,7 @@ builder.Services.AddIdentityCore<UserEntity>()
                 .AddEntityFrameworkStores<BookRaterDBContext>();
 
 builder.Services.AddScoped<IReviewService, ReviewService>();
-<<<<<<< HEAD
-builder.Services.AddScoped<IGenreService, GenreService>();
-builder.Services.AddScoped<IAuthenticationManager, AuthenticationManager>();
-
-=======
 builder.Services.AddScoped<IBookService, BookService>();
->>>>>>> 363c8a8599c3fba68b1261b261293e22dbda9914
 builder.Services.AddAutoMapper(typeof(MappingConfiguration));
 
 builder.Services.AddHttpContextAccessor();
