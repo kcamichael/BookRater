@@ -10,7 +10,7 @@ using Microsoft.EntityFrameworkCore;
 
 namespace BookRater.Services.AuthorServices
 {
-    public class AuthorService : IAuthorServices
+    public class AuthorService : IAuthorService
     {
         private readonly BookRaterDBContext _context;
         private readonly IMapper _mapper;
