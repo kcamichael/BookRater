@@ -2,6 +2,7 @@ using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
+using BookRater.Models.BookModels;
 using BookRater.Services.BookServices;
 using Microsoft.AspNetCore.Mvc;
 
@@ -18,16 +19,10 @@ namespace BookRater.API.Conttrollers
             _bookService = bookService;
         }
 
-        [HttpGet]
-        public async Task<IActionResult> Get()
-        {
-            return Ok(await _bookService.GetDetail());
-        }
-
         [HttpGet("{id:int}")]
         public async Task<IActionResult> Get(int id)
         {
-            var book = await _bookService.GetBook(id);
+            var book = await _bookService.GetDetail(id);
             if (book is null) return NotFound();
             else
             {
@@ -35,10 +30,16 @@ namespace BookRater.API.Conttrollers
             }
         }
 
+        [HttpGet]
+        public async Task<IActionResult> Get()
+        {
+            return Ok(await _bookService.GetBooks());
+        }
+
         [HttpGet("{GenreId:int}")]
         public async Task<IActionResult> GetGenre(int GenreId)
         {
-            var book = await _bookService.GetBook(GenreId);
+            var book = await _bookService.GetBookByGenre(GenreId);
             if (book is null) return NotFound();
             else
             {
@@ -49,7 +50,7 @@ namespace BookRater.API.Conttrollers
         [HttpGet("{AuthorId:int}")]
         public async Task<IActionResult> GetAuthor(int AuthorId)
         {
-            var book = await _bookService.GetBook(AuthorId);
+            var book = await _bookService.GetBookByAuthor(AuthorId);
             if (book is null) return NotFound();
             else
             {

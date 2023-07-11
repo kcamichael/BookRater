@@ -1,7 +1,11 @@
 using BookRater.Data.BookRaterContext;
 using BookRater.Data.Entities;
 using BookRater.Models.MappingConfigurations;
+<<<<<<< HEAD
 using BookRater.Services.GenreServices;
+=======
+using BookRater.Services.BookServices;
+>>>>>>> 4b73ebc4b3d073ce2fd6af93d4bd955b323d86e5
 using BookRater.Services.ReviewServices;
 using BookRater.Services.UserServices;
 using Microsoft.AspNetCore.Identity;
