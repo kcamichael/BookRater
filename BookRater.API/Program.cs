@@ -1,5 +1,6 @@
 using BookRater.Data.BookRaterContext;
 using BookRater.Models.MappingConfigurations;
+using BookRater.Services.BookServices;
 using BookRater.Services.ReviewServices;
 using Microsoft.EntityFrameworkCore;
 

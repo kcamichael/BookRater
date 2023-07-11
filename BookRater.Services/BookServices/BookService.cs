@@ -72,7 +72,7 @@ namespace BookRater.Services.BookServices
         {
             var book = await _context.Book.ToListAsync();
 
-            return await _context.Book.Select(b => _mapper.Map<BookListItem>(p)).ToListAsync();
+            return await _context.Book.Select(b => _mapper.Map<BookListItem>(b)).ToListAsync();
         }
 
         public async Task<List<BookListItem>> GetBookByGenre(int GenreId)
