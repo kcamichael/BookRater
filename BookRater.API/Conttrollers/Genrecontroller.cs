@@ -19,16 +19,11 @@ namespace BookRater.API.Conttrollers
         public async Task<IActionResult> Post(GenreCreate model)
         {
             if (!ModelState.IsValid)
-            {
                 return BadRequest(ModelState);
-            }
-
             if (await _genreService.CreateGenre(model))
-            {
-                return Ok("Success");
-            }
+                return Ok("Success. Post");
             else
-                return StatusCode(500, "Internal Server Error.");
+                return StatusCode(500, "Internal Server Error. HttpPost Else Statement");
         }
 
         [HttpDelete]
@@ -37,20 +32,26 @@ namespace BookRater.API.Conttrollers
             if (await _genreService.DeleteGenre(id))
                 return Ok("Genre Deleted!");
             else
-                return StatusCode(500, "Internal Sever Error");
+                return StatusCode(500, "Internal Sever Error. HttpDelete Else Statement");
         }
 
         [HttpPut]
         public async Task<IActionResult> Put(GenreEdit model, int id)
         {
             if (id != model.Id)
+            {
                 return BadRequest("Invalid Id");
+            }
             if (!ModelState.IsValid)
+            {
                 return BadRequest(ModelState);
+            }
             if (await _genreService.UpdateGenre(model))
+            {
                 return Ok("Genre Updated");
+            }
             else
-                return StatusCode(500, "Internal Server Error");
+                return StatusCode(500, "Internal Server Error. HttpPut Else Statement");
         }
 
         [HttpGet]
@@ -58,6 +59,5 @@ namespace BookRater.API.Conttrollers
         {
             return Ok(await _genreService.GetGenres());
         }
-
     }
 }
