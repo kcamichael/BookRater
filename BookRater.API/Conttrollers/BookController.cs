@@ -2,8 +2,6 @@ using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
-using BookRater.Models.BookModels;
-using BookRater.Services.BookServices;
 using Microsoft.AspNetCore.Mvc;
 
 namespace BookRater.API.Conttrollers
@@ -20,10 +18,10 @@ namespace BookRater.API.Conttrollers
         }
 
         [HttpGet]
-        // public async Task<IActionResult> Get()
-        // {
-        //     return Ok(await _bookService.GetDetail());
-        // }
+        public async Task<IActionResult> Get()
+        {
+            return Ok(await _bookService.GetDetail());
+        }
 
         [HttpPost]
         public async Task<IActionResult> Post(BookCreate model)

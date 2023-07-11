@@ -68,14 +68,9 @@ namespace BookRater.Services.BookServices
             return _mapper.Map<BookDetail>(book);
         }
 
-        // public async Task<List<BookListItem>> GetBooks()
-        // {
-        //     return await _context.Book.Select(b => _mapper.Map<BookListItem>(p)).ToListAsync();
-        // }
-
-        public Task<List<BookListItem>> GetBooks()
+        public async Task<List<BookListItem>> GetBooks()
         {
-            throw new NotImplementedException();
+            return await _context.Book.Select(b => _mapper.Map<BookListItem>(p)).ToListAsync();
         }
 
         public async Task<List<BookListItem>> GetBookByGenre(int GenreId)
