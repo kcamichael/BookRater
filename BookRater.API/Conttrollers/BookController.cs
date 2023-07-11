@@ -42,10 +42,8 @@ namespace BookRater.API.Conttrollers
         {
             if (id != model.Id)
                 return BadRequest("Invalid Id");
-
             if (!ModelState.IsValid)
                 return BadRequest(ModelState);
-
             if (await _bookService.UpdateBook(model))
                 return Ok("Book Updated!");
             else
@@ -63,7 +61,5 @@ namespace BookRater.API.Conttrollers
             else
                 return StatusCode(500, "Internal Server Error.");
         }
-
-
     }
 }

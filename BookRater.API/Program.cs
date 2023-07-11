@@ -16,6 +16,7 @@ builder.Services.AddDbContext<BookRaterDBContext>(options => {
 });
 
 builder.Services.AddScoped<IReviewService, ReviewService>();
+builder.Services.AddScoped<IBookService, BookService>();
 builder.Services.AddAutoMapper(typeof(MappingConfiguration));
 var app = builder.Build();
 
