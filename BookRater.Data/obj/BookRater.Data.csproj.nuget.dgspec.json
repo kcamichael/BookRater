@@ -1,6 +1,19 @@
 {
   "format": 1,
   "restore": {
+<<<<<<< HEAD
+    "C:\\ElevenFiftyBlueBadge\\BookRater\\BookRater\\BookRater.Data\\BookRater.Data.csproj": {}
+  },
+  "projects": {
+    "C:\\ElevenFiftyBlueBadge\\BookRater\\BookRater\\BookRater.Data\\BookRater.Data.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\ElevenFiftyBlueBadge\\BookRater\\BookRater\\BookRater.Data\\BookRater.Data.csproj",
+        "projectName": "BookRater.Data",
+        "projectPath": "C:\\ElevenFiftyBlueBadge\\BookRater\\BookRater\\BookRater.Data\\BookRater.Data.csproj",
+        "packagesPath": "C:\\Users\\ouiza\\.nuget\\packages\\",
+        "outputPath": "C:\\ElevenFiftyBlueBadge\\BookRater\\BookRater\\BookRater.Data\\obj\\",
+=======
     "C:\\ElevenFiftyBlueBadge165\\BookRater\\BookRater.Data\\BookRater.Data.csproj": {}
   },
   "projects": {
@@ -16,6 +29,7 @@
         "packagesPath": "C:\\Users\\kcami\\.nuget\\packages\\",
 >>>>>>> f45083ecd9fd967c037f6ff244394d0adbcc0891
         "outputPath": "C:\\ElevenFiftyBlueBadge165\\BookRater\\BookRater.Data\\obj\\",
+>>>>>>> a6586eb6bb421a1429bff9c9122b93bab7742803
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"

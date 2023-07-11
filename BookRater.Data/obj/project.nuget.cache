@@ -1,9 +1,15 @@
 {
   "version": 2,
 <<<<<<< HEAD
+  "dgSpecHash": "oFsa2NzlfxhmyWIgUgq3dRUbtdN1ISs19I5inDs4mb9nFrupDDWxABOdv5OyxgQxncd0utElSd0eBEtF3qhpMA==",
+  "success": true,
+  "projectFilePath": "C:\\ElevenFiftyBlueBadge\\BookRater\\BookRater\\BookRater.Data\\BookRater.Data.csproj",
+=======
+<<<<<<< HEAD
   "dgSpecHash": "1WrdstmMXCqalqWiyEdCbXgP0AIBcK/Z1iDNNf7cjXUa+U2S6W6JONKhlpZueCtiMn/US0indMrbZCKc59KOSg==",
   "success": true,
   "projectFilePath": "C:\\ElevenFiftyBlueBadge165\\BookRater\\BookRater.Data\\BookRater.Data.csproj",
+>>>>>>> a6586eb6bb421a1429bff9c9122b93bab7742803
   "expectedPackageFiles": [
     "C:\\Users\\seand\\.nuget\\packages\\azure.core\\1.24.0\\azure.core.1.24.0.nupkg.sha512",
     "C:\\Users\\seand\\.nuget\\packages\\azure.identity\\1.6.0\\azure.identity.1.6.0.nupkg.sha512",
@@ -149,7 +155,11 @@
       "code": "Undefined",
       "level": "Warning",
       "warningLevel": 1,
+<<<<<<< HEAD
+      "message": "Problem reading the cache file C:\\ElevenFiftyBlueBadge\\BookRater\\BookRater\\BookRater.Data\\obj\\project.nuget.cache : Invalid property identifier character: <. Path 'version', line 3, position 0."
+=======
       "message": "Problem reading the cache file C:\\ElevenFiftyBlueBadge165\\BookRater\\BookRater.Data\\obj\\project.nuget.cache : Invalid property identifier character: <. Path 'version', line 3, position 0."
+>>>>>>> a6586eb6bb421a1429bff9c9122b93bab7742803
     }
   ]
 }
