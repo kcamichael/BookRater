@@ -3451,11 +3451,7 @@
     ]
   },
   "packageFolders": {
-<<<<<<< HEAD
     "C:\\Users\\clarf\\.nuget\\packages\\": {}
-=======
-    "C:\\Users\\kcami\\.nuget\\packages\\": {}
->>>>>>> 363c8a8599c3fba68b1261b261293e22dbda9914
   },
   "project": {
     "version": "1.0.0",
@@ -3463,15 +3459,11 @@
       "projectUniqueName": "C:\\ElevenFiftyBlueBadge165\\BookRater\\BookRater.Services\\BookRater.Services.csproj",
       "projectName": "BookRater.Services",
       "projectPath": "C:\\ElevenFiftyBlueBadge165\\BookRater\\BookRater.Services\\BookRater.Services.csproj",
-      "packagesPath": "C:\\Users\\kcami\\.nuget\\packages\\",
+      "packagesPath": "C:\\Users\\clarf\\.nuget\\packages\\",
       "outputPath": "C:\\ElevenFiftyBlueBadge165\\BookRater\\BookRater.Services\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
-<<<<<<< HEAD
         "C:\\Users\\clarf\\AppData\\Roaming\\NuGet\\NuGet.Config"
-=======
-        "C:\\Users\\kcami\\AppData\\Roaming\\NuGet\\NuGet.Config"
->>>>>>> 363c8a8599c3fba68b1261b261293e22dbda9914
       ],
       "originalTargetFrameworks": [
         "net7.0"
@@ -3523,11 +3515,7 @@
             "privateAssets": "all"
           }
         },
-<<<<<<< HEAD
         "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.203\\RuntimeIdentifierGraph.json"
-=======
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.304\\RuntimeIdentifierGraph.json"
->>>>>>> 363c8a8599c3fba68b1261b261293e22dbda9914
       }
     }
   },

@@ -6,6 +6,7 @@ using AutoMapper;
 using BookRater.Data.BookRaterContext;
 using BookRater.Data.Entities;
 using BookRater.Models.AuthorModels;
+using BookRater.Services.AuthorService;
 using Microsoft.EntityFrameworkCore;
 
 namespace BookRater.Services.AuthorServices

@@ -2,6 +2,7 @@ using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
+using BookRater.Services.BookServices;
 using Microsoft.AspNetCore.Mvc;
 
 namespace BookRater.API.Conttrollers
@@ -35,7 +36,7 @@ namespace BookRater.API.Conttrollers
         }
 
         [HttpGet("{GenreId:int}")]
-        public async Task<IActionResult> Get(int GenreId)
+        public async Task<IActionResult> GetGenre(int GenreId)
         {
             var book = await _bookService.GetBook(GenreId);
             if (book is null) return NotFound();
@@ -46,7 +47,7 @@ namespace BookRater.API.Conttrollers
         }
 
         [HttpGet("{AuthorId:int}")]
-        public async Task<IActionResult> Get(int AuthorId)
+        public async Task<IActionResult> GetAuthor(int AuthorId)
         {
             var book = await _bookService.GetBook(AuthorId);
             if (book is null) return NotFound();
