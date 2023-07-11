@@ -5,6 +5,6 @@ namespace BookRater.Models.GenreModels
     public class GenreCreate
     {
         [Required]
-        public string GenreName { get; set; } = string.Empty;
+        public string GenreName { get; set; } = null!;
     }
 }
