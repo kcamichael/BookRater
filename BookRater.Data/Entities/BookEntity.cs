@@ -21,14 +21,19 @@ namespace BookRater.Data.Entities
 
         [Required]
         public int AuthorId { get; set; }
+        public AuthorEntity Author { get; set; }
 
         [Required]
         public int UserId { get; set; }
 
         [Required]
         public int ReviewId { get; set; }
+        public ReviewEntity Review { get; set; }
+
 
         [Required]
         public int GenreId { get; set; }
+        public GenreEntity Genre { get; set; }
+
     }
 }
