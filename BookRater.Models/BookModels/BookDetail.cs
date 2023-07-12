@@ -3,29 +3,26 @@ using System.Collections.Generic;
 using System.ComponentModel.DataAnnotations;
 using System.Linq;
 using System.Threading.Tasks;
+using BookRater.Models.AuthorModels;
+using BookRater.Models.GenreModels;
+using BookRater.Models.ReviewModels;
 
 namespace BookRater.Models.BookModels
 {
     public class BookDetail
     {
-        [Key]
-        [Required]
         public int Id { get; set; }
 
-        [Required]
         [MaxLength(100, ErrorMessage = "Title cannot exceed 100 characters.")]
         public string Title { get; set; } = string.Empty;
 
         [MaxLength(500, ErrorMessage = "Title cannot exceed 500 characters.")]
         public string Summary { get; set; } = string.Empty;
 
-        [Required]
-        public int AuthorId { get; set; }
+        public AuthorListItemVM Author { get; set; }
 
-        [Required]
-        public int ReviewId { get; set; }
+        public ReviewListItem Review { get; set; }
 
-        [Required]
-        public int GenreId { get; set; }
+        public GenreListItem Genre { get; set; }
     }
 }

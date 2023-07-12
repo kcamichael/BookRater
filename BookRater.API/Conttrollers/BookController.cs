@@ -36,7 +36,8 @@ namespace BookRater.API.Conttrollers
             return Ok(await _bookService.GetBooks());
         }
 
-        [HttpGet("{GenreId:int}")]
+        [HttpGet]
+        [Route("/Genre/{GenreId}")]
         public async Task<IActionResult> GetGenre(int GenreId)
         {
             var book = await _bookService.GetBookByGenre(GenreId);
@@ -47,7 +48,9 @@ namespace BookRater.API.Conttrollers
             }
         }
 
-        [HttpGet("{AuthorId:int}")]
+        [HttpGet]
+        [Route("/AuthorSearch/{AuthorId}")]
+
         public async Task<IActionResult> GetAuthor(int AuthorId)
         {
             var book = await _bookService.GetBookByAuthor(AuthorId);
