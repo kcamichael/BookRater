@@ -19,4 +19,3 @@ namespace BookRater.Services.BookServices
         public Task<List<BookListItem>> GetBookByAuthor(int AuthorId);
     }
 }
-

@@ -6,6 +6,6 @@ namespace BookRater.Models.GenreModels
     {
         [Required]
         public int Id { get; set; }
-        public string GenreName { get; set; } = string.Empty;
+        public string GenreName { get; set; } = null!;
     }
 }

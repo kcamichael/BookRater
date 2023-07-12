@@ -1,7 +1,7 @@
-using AutoMapper;
 using BookRater.Data.BookRaterContext;
 using BookRater.Data.Entities;
 using BookRater.Models.GenreModels;
+using AutoMapper;
 using Microsoft.EntityFrameworkCore;
 
 namespace BookRater.Services.GenreServices
@@ -20,9 +20,12 @@ namespace BookRater.Services.GenreServices
 
         public async Task<bool> CreateGenre(GenreCreate model)
         {
-            var entity = _mapper.Map<GenreEntity>(model);
+            var genre = new GenreEntity
+            {
+                GenreName = model.GenreName,
+            };
 
-            await _context.Genre.AddAsync(entity);
+            await _context.Genre.AddAsync(genre);
             return await _context.SaveChangesAsync() > 0;
         }
 
@@ -38,7 +41,7 @@ namespace BookRater.Services.GenreServices
 
         public async Task<bool> UpdateGenre(GenreEdit model)
         {
-            var genre = await _context.Genre.Include(genre => genre.GenreName).SingleOrDefaultAsync(g => g.Id == model.Id);
+            var genre = await _context.Genre.SingleOrDefaultAsync(g => g.Id == model.Id);
             if (genre is null)
                 return false;
 
@@ -52,9 +55,7 @@ namespace BookRater.Services.GenreServices
         public async Task<List<GenreListItem>> GetGenres()
         {
             var genres = await _context.Genre.ToListAsync();
-
             var genresListItems = _mapper.Map<List<GenreListItem>>(genres);
-
             return genresListItems;
         }
     }
