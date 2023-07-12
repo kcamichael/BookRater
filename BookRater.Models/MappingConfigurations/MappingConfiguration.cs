@@ -4,7 +4,9 @@ using System.Linq;
 using System.Threading.Tasks;
 using AutoMapper;
 using BookRater.Data.Entities;
+using BookRater.Models.GenreModels;
 using BookRater.Models.ReviewModels;
+using BookRater.Models.UserModels;
 
 namespace BookRater.Models.MappingConfigurations
 {
@@ -12,11 +14,19 @@ namespace BookRater.Models.MappingConfigurations
     {
         public MappingConfiguration()
         {
-            CreateMap<ReviewEntity,ReviewCreate>().ReverseMap();
-            CreateMap<ReviewEntity,ReviewDetail>().ReverseMap();
-            CreateMap<ReviewEntity,ReviewEdit>().ReverseMap();
-            CreateMap<ReviewEntity,ReviewListItem>().ReverseMap();
-            CreateMap<BookRating,BookRatingListItem>().ReverseMap();
+            CreateMap<ReviewEntity, ReviewCreate>().ReverseMap();
+            CreateMap<ReviewEntity, ReviewDetail>().ReverseMap();
+            CreateMap<ReviewEntity, ReviewEdit>().ReverseMap();
+            CreateMap<ReviewEntity, ReviewListItem>().ReverseMap();
+
+            CreateMap<BookRating, BookRatingListItem>().ReverseMap();
+
+            CreateMap<GenreEntity, GenreCreate>().ReverseMap();
+            CreateMap<GenreEntity, GenreDetail>().ReverseMap();
+            CreateMap<GenreEntity, GenreEdit>().ReverseMap();
+            CreateMap<GenreEntity, GenreListItem>().ReverseMap();
+
+            CreateMap<UserEntity, UserEntityVM>().ReverseMap();
         }
     }
 }

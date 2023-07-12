@@ -33,10 +33,10 @@ namespace BookRater.Services.AuthorServices
         public async Task<bool> DeleteAuthor(int id)
         {
             var author = await _context.Authors.FindAsync(id);
-            if(author is null) return false;
+            if (author is null) return false;
 
             _context.Authors.Remove(author);
-            
+
             return await _context.SaveChangesAsync() > 0;
         }
 
@@ -44,7 +44,7 @@ namespace BookRater.Services.AuthorServices
         {
             var author = await _context.Authors.SingleOrDefaultAsync(x => x.Id == id);
 
-            if(author is null) return new AuthorDetailVM{};
+            if (author is null) return new AuthorDetailVM { };
 
             return _mapper.Map<AuthorDetailVM>(author);
         }
