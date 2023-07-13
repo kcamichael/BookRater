@@ -8,9 +8,10 @@ namespace BookRater.Data.Entities
 {
     public class ReviewEntity
     {
-        [Required]
+        [Key]
         public int Id { get; set; }
+        [Required]
         public string Comment { get; set; }
-        public int Rating { get; set; }
+        public List<BookRating> BookRatings { get; set; }
     }
 }
