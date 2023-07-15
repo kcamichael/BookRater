@@ -4177,7 +4177,7 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\clarf\\.nuget\\packages\\": {}
+    "C:\\Users\\kcami\\.nuget\\packages\\": {}
   },
   "project": {
     "version": "1.0.0",
@@ -4185,16 +4185,17 @@
       "projectUniqueName": "C:\\ElevenFiftyBlueBadge165\\BookRater\\BookRater.API\\BookRater.API.csproj",
       "projectName": "BookRater.API",
       "projectPath": "C:\\ElevenFiftyBlueBadge165\\BookRater\\BookRater.API\\BookRater.API.csproj",
-      "packagesPath": "C:\\Users\\clarf\\.nuget\\packages\\",
+      "packagesPath": "C:\\Users\\kcami\\.nuget\\packages\\",
       "outputPath": "C:\\ElevenFiftyBlueBadge165\\BookRater\\BookRater.API\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
-        "C:\\Users\\clarf\\AppData\\Roaming\\NuGet\\NuGet.Config"
+        "C:\\Users\\kcami\\AppData\\Roaming\\NuGet\\NuGet.Config"
       ],
       "originalTargetFrameworks": [
         "net7.0"
       ],
       "sources": {
+        "C:\\Program Files\\dotnet\\sdk\\7.0.304\\Sdks\\Microsoft.NET.Sdk.Web\\library-packs": {},
         "https://api.nuget.org/v3/index.json": {}
       },
       "frameworks": {
@@ -4269,7 +4270,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.203\\RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.304\\RuntimeIdentifierGraph.json"
       }
     }
   }

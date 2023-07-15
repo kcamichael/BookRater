@@ -58,7 +58,7 @@ namespace BookRater.Services.BookServices
 
         public async Task<BookDetail> GetDetail(int id)
         {
-            var book = await _context.Book.Include(b => b.AuthorId).Include(b => b.GenreId).Include(b => b.ReviewId).SingleOrDefaultAsync(x => x.Id == id);
+            var book = await _context.Book.Include(b => b.Author).Include(b => b.Genre).Include(b => b.Review).SingleOrDefaultAsync(x => x.Id == id);
             if (book is null) return null!;
 
             return _mapper.Map<BookDetail>(book);
@@ -73,13 +73,13 @@ namespace BookRater.Services.BookServices
 
         public async Task<List<BookListItem>> GetBookByGenre(int GenreId)
         {
-            var book = await _context.Book.FindAsync(GenreId);
+            var book = await _context.Book.Where(x => x.GenreId == GenreId).ToListAsync();
             return _mapper.Map<List<BookListItem>>(book);
         }
 
         public async Task<List<BookListItem>> GetBookByAuthor(int AuthorId)
         {
-            var book = await _context.Book.FindAsync(AuthorId);
+            var book = await _context.Book.Where(x => x.AuthorId == AuthorId).ToListAsync();
             return _mapper.Map<List<BookListItem>>(book);
         }
     }
