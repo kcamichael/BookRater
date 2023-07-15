@@ -4177,8 +4177,7 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\seand\\.nuget\\packages\\": {},
-    "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages": {}
+    "C:\\Users\\kcami\\.nuget\\packages\\": {}
   },
   "project": {
     "version": "1.0.0",
@@ -4186,23 +4185,17 @@
       "projectUniqueName": "C:\\ElevenFiftyBlueBadge165\\BookRater\\BookRater.API\\BookRater.API.csproj",
       "projectName": "BookRater.API",
       "projectPath": "C:\\ElevenFiftyBlueBadge165\\BookRater\\BookRater.API\\BookRater.API.csproj",
-      "packagesPath": "C:\\Users\\seand\\.nuget\\packages\\",
+      "packagesPath": "C:\\Users\\kcami\\.nuget\\packages\\",
       "outputPath": "C:\\ElevenFiftyBlueBadge165\\BookRater\\BookRater.API\\obj\\",
       "projectStyle": "PackageReference",
-      "fallbackFolders": [
-        "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
-      ],
       "configFilePaths": [
-        "C:\\Users\\seand\\AppData\\Roaming\\NuGet\\NuGet.Config",
-        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
-        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        "C:\\Users\\kcami\\AppData\\Roaming\\NuGet\\NuGet.Config"
       ],
       "originalTargetFrameworks": [
         "net7.0"
       ],
       "sources": {
-        "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
-        "C:\\Program Files\\dotnet\\library-packs": {},
+        "C:\\Program Files\\dotnet\\sdk\\7.0.304\\Sdks\\Microsoft.NET.Sdk.Web\\library-packs": {},
         "https://api.nuget.org/v3/index.json": {}
       },
       "frameworks": {
@@ -4277,16 +4270,8 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.203\\RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.304\\RuntimeIdentifierGraph.json"
       }
     }
-  },
-  "logs": [
-    {
-      "code": "Undefined",
-      "level": "Warning",
-      "warningLevel": 1,
-      "message": "Problem reading the cache file C:\\ElevenFiftyBlueBadge165\\BookRater\\BookRater.API\\obj\\project.nuget.cache : Invalid property identifier character: <. Path 'version', line 3, position 0."
-    }
-  ]
+  }
 }

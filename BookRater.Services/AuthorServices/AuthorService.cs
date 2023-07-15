@@ -6,6 +6,7 @@ using AutoMapper;
 using BookRater.Data.BookRaterContext;
 using BookRater.Data.Entities;
 using BookRater.Models.AuthorModels;
+using BookRater.Services.AuthorService;
 using Microsoft.EntityFrameworkCore;
 
 namespace BookRater.Services.AuthorServices
@@ -32,10 +33,10 @@ namespace BookRater.Services.AuthorServices
         public async Task<bool> DeleteAuthor(int id)
         {
             var author = await _context.Authors.FindAsync(id);
-            if(author is null) return false;
+            if (author is null) return false;
 
             _context.Authors.Remove(author);
-            
+
             return await _context.SaveChangesAsync() > 0;
         }
 
@@ -43,7 +44,7 @@ namespace BookRater.Services.AuthorServices
         {
             var author = await _context.Authors.SingleOrDefaultAsync(x => x.Id == id);
 
-            if(author is null) return new AuthorDetailVM{};
+            if (author is null) return new AuthorDetailVM { };
 
             return _mapper.Map<AuthorDetailVM>(author);
         }
