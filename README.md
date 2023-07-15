@@ -29,3 +29,20 @@ You can delete a book entry by using the DELETE dropdown that says /api/Book/{id
 You can edit a book entry by using the PUT dropdown that says /api/Book/{id}.
 
 ___________________________________________________________________________________________________________________________________
+
+GENRE Section:
+Add a Genre by using the POST Dropdown. Green rectangle box.
+
+Delete a Genre by using the DELETE Dropdown. Red rectangle box. Only need to input the ID assigned to the GENRE.
+
+Edit a Genre by using the PUT Dropdown. Orange/Yellow rectangle box. Need to input the ID assigned to the GENRE TWICE and the new name ONCE.
+
+View all Genres by using the GET Dropdown. Blue rectangle box.
+
+___________________________________________________________________________________________________________________________________
+
+USER Section:
+Create user account by using the POST Dropdown. Green rectangle box. (/api/Accounts/Register)
+
+Login to created account by using the POST Dropdown. Green rectangle box. (api/Accounts/Login)
+___________________________________________________________________________________________________________________________________
