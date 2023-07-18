@@ -20,7 +20,7 @@ You can list books by by their genre in the GET dropdown that says /Genre/GenreI
 
 You can list books by by their author in the GET dropdown that says /AuthorSearch/AuthorId/.
 
-You can list all books in the GET drop down that say /api/Book/.
+You can list all books in the GET drop down that says /api/Book/.
 
 You can create a new book entry by using the POST dropdown that says /api/Book/.
 
